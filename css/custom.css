@@ -260,8 +260,9 @@ grid-item figure.cs-hover img {
     left: 0;
     width: 25% !important;
     height: 100%;
-    background-color:#1fa15c;
+    background-color: #b0120a;
     padding-top: 70px;
+    box-shadow: inset -30px -10px 80px 0 rgba(0,0,0,.2), inset -10px -10px 20px 0 rgba(0,0,0,.15), 1px 0 0 0 white;
 }
 
 #logo {
