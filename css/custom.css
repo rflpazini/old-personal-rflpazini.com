@@ -9,14 +9,14 @@ html {
 }
 
 a {
-    text-decoration: none;
     color: #999;
+    text-decoration: none;
     font-family: 'Roboto Slab', serif;
 }
 
 a:hover {
-    text-decoration: none;
     color: #ccc;
+    text-decoration: none;
 }
 
 h1,
@@ -46,202 +46,6 @@ p {
 
 .center {
     text-align: center !important;
-}
-
-/* Index */
-
-#start {
-    background-color: #1fa15c;
-    height: 100%;
-}
-
-#start h1 {
-    margin-top: -40px;
-    text-align: center;
-    color: #fff;
-}
-
-#logo-index {
-    max-width: 100%;
-}
-
-.scroll {
-    color: #69f0ae;
-    font-size: 4.7em;
-    padding: 20px;
-    display: block;
-    text-align: center;
-    z-index: 10;
-}
-
-.scroll span:hover {
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-    color: #404040;
-}
-
-#who {
-    padding: 10px 0 20px 0;
-}
-
-#show-case {
-    background-color: /* #2962ff */ #4285f4;
-   /*  height: 600px; */
-}
-
-#show-case h1 {
-    color: #fff;
-    font-weight: 300;
-    font-size: 4em;
-}
-
-
-
-#footer {
-    background-color: #404040;
-    height: 400px;
-}
-
-/* Grid */
-
-.grid {
-	padding: 20px 20px px 20px;
-	max-width: 1000px;
-	margin: 0 auto;
-	list-style: none;
-	text-align: center;
-}
-
-.grid li {
-	display: inline-block;
-	width: 400px;
-	margin: 0;
-	padding: 15px;
-	text-align: left;
-	position: relative;
-}
-
-.grid figure {
-	margin: 0;
-	position: relative;
-}
-
-.grid figure img {
-	max-width: 100%;
-	display: block;
-	position: relative;
-}
-
-.grid figcaption {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 20px;
-	background: #f0f0f0;
-	color: #404040;
-}
-
-.grid figcaption h3 {
-	margin: 0;
-	padding: 0;
-	color: #4285f4;
-}
-
-.grid figcaption a {
-	text-align: center;
-	padding: 5px 10px;
-	border-radius: 2px;
-	display: inline-block;
-	background: #404040;
-	color: #fff;
-} 
-
-.grid figcaption a:hover {
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-    background: #4285f4;
-}
-/* fim grid */
-
-/* Estilo do item grid */
-
-.grid-item li {
-    -webkit-perspective: 1700px;
-    -moz-perspective: 1700px;
-    perspective: 1700px;
-    -webkit-perspective-origin: 0 50%;
-    -moz-perspective-origin: 0 50%;
-    perspective-origin: 0 50%;
-}
-
-.grid-item figure {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-
-.grid-item figure div {
-    overflow: hidden;
-}
-
-.grid-item figure div img {
-    -webkit-transition: -webkit-transform 0.4s;
-    -moz-transition -moz-transform 0.4s;
-    transition: transform 0.4s;
-}
-
-.no-touch .grid-item figure:hover img,
-grid-item figure.cs-hover img {
-    -webkit-transform: translateX(25%);
-	-moz-transform: translateX(25%);
-	-ms-transform: translateX(25%);
-	transform: translateX(25%);
-}
-
-.grid-item figcaption {
-    height: 100%;
-	width: 50%;
-	opacity: 0;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transform-origin: 0 0;
-	-moz-transform-origin: 0 0;
-	transform-origin: 0 0;
-	-webkit-transform: rotateY(-90deg);
-	-moz-transform: rotateY(-90deg);
-	transform: rotateY(-90deg);
-	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
-	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
-	transition: transform 0.4s, opacity 0.1s 0.3s;
-}
-
-.no-touch .grid-item figure:hover figcaption,
-.grid-item figure.grid-hover figcaption {
-    opacity: 1;
-	-webkit-transform: rotateY(0deg);
-	-moz-transform: rotateY(0deg);
-	transform: rotateY(0deg);
-	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
-	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
-	transition: transform 0.4s, opacity 0.1s;
-}
-
-.grid-item figcaption a {
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
-}
-
-#frase {
-    background-color: #fff;
-}
-
-#frase h1 {
-    font-size: 3.8em;
-    font-style: italic
 }
 
 /* Blog */
@@ -286,12 +90,89 @@ grid-item figure.cs-hover img {
 	color: #fff;
 }
 
+#master a:hover {
+    webkit-transition: all 0.25s;
+    moz-transition: all 0.25s;
+    o-transition: all 0.25s;
+    transition: all 0.25s;
+    color: #212121;
+}
+
+.social-links {
+    top: 25px;
+    right: 15px;
+    width: 250px;
+    height: 34px;
+    list-style: none;
+    position: absolute;
+    display: inline-block;
+}
+
+.social-links li {
+    width: 34px;
+    height: 34px;
+    float: left;
+    margin: 0 8px;
+    display: inline-block;
+}
+
+.social-links li a {
+    display: block;
+    outline: none;
+    margin: 0 4px;
+    text-indent: -9000px;
+    position: relative;
+    border: none;
+    overflow: hidden;
+}
+
+#social-twitter {
+    width: 34px;
+    height: 34px;
+    background: transparent url(../img/social-twitter.png) no-repeat;
+}
+
+#social-facebook {
+    width: 34px;
+    height: 34px;
+    background: transparent url(../img/social-facebook.png) no-repeat;
+}
+
+#social-gplus {
+    width: 34px;
+    height: 34px;
+    background: transparent url(../img/social-google.png) no-repeat;
+}
+
+#social-instagram {
+    width: 34px;
+    height: 34px;
+    background: transparent url(../img/social-instagram.png) no-repeat;
+}
+
+#social-git {
+    width: 34px;
+    height: 34px;
+    background: transparent url(../img/social-github.png) no-repeat;
+}
+
+#social-twitter:hover,
+#social-facebook:hover,
+#social-gplus:hover,
+#social-instagram:hover,
+#social-git:hover {
+    webkit-transform: rotate(5deg);
+    moz-transform: rotate(5deg);
+    o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
 .title {
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
     color: #a1a1a1;
     padding: 0 0 20px 0;
     border-bottom: 1px solid #e7e7e7;
+    text-align: center;
+    font-family: 'Roboto Slab', serif; 
 }
 
 .focu :focus {
