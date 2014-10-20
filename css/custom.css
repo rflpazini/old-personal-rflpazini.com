@@ -10,7 +10,7 @@ html {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #999;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -267,11 +267,11 @@ grid-item figure.cs-hover img {
 
 #logo {
     background:url(../img/logo.png) center no-repeat;
-    padding: 160px 0;
+    padding: 260px 0 50px 0;
 }
 
 #master ul {
-    padding: 60px 0;
+    padding: 10px 0;
     text-align: center;
     display: block;
 }
@@ -280,6 +280,10 @@ grid-item figure.cs-hover img {
     padding: 8px 0;
     font-size: 20px;
     color: #fff;
+}
+
+#master a {
+	color: #fff !important;
 }
 
 .title {
