@@ -1,0 +1,12 @@
+/*
+* The CSS responsive for this site
+* Made by me (Rafael Pazini) - 21/10/2014
+*/
+
+@media only screen and (max-width: 950px) {
+    #master {
+        box-shadow: none;
+        display: block;
+        
+    }
+}
