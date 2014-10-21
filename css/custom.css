@@ -92,9 +92,9 @@ p {
 }
 
 #master a:hover {
-    webkit-transition: all 0.25s;
-    moz-transition: all 0.25s;
-    o-transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
     transition: all 0.25s;
     color: #212121;
 }
@@ -162,9 +162,9 @@ p {
 #social-gplus:hover,
 #social-instagram:hover,
 #social-git:hover {
-    webkit-transform: rotate(5deg);
-    moz-transform: rotate(5deg);
-    o-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
     transform: rotate(5deg);
 }
 
