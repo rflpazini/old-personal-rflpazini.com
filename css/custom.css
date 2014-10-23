@@ -68,7 +68,6 @@ p {
 
 #logo {
     background:url(../img/logo.png) center no-repeat;
-    padding: 260px 0 50px 0;
 }
 
 #master ul {
@@ -96,13 +95,10 @@ p {
 }
 
 .social-links {
-    top: 25px;
-    right: 15px;
     width: 250px;
     height: 34px;
     list-style: none;
-    position: absolute;
-    display: inline-block;
+    display: block;
 }
 
 .social-links li {

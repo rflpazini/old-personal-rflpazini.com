@@ -3,18 +3,32 @@
 * Made by me (Rafael Pazini) - 21/10/2014
 */
 
-@media only screen and (max-width: 950px) {
+@media only screen and (min-width: 900px) {
+	.social-links {
+		top: 25px;
+    	right: 15px;
+    	position: absolute;
+	}
+
+	#logo {
+		padding: 260px 0 40px 0;
+	}
+}
+
+@media only screen and (max-width: 900px) {
     #master {
         box-shadow: none;
         display: block !important;
         width: 100% !important;
         position: static !important;
+        padding-top: 45px !important;
     }
 
     #master ul li {
-    	position: static;
+    	position: relative;
     	display: inline-block !important;
-    	margin: -80px 10px;
+    	margin: 0px 10px;
+
     }
 
     .blog {
@@ -26,16 +40,13 @@
     	padding: 20px 30px;
     }
 
-    /*.social-links {
-		
-    }*/
+    #logo {
+    	padding: 120px 0;
+    }
 
-    #social-twitter,
-	#social-facebook,
-	#social-gplus,
-	#social-instagram,
-	#social-git {
-		-webkit-tint: #fff;
-		fill: white;
-	}
+    .social-links {
+    	position: relative;
+    	bottom: 25px !important;
+    	margin: 0 auto;
+    }
 }
