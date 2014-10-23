@@ -6,7 +6,36 @@
 @media only screen and (max-width: 950px) {
     #master {
         box-shadow: none;
-        display: block;
-        
+        display: block !important;
+        width: 100% !important;
+        position: static !important;
     }
+
+    #master ul li {
+    	position: static;
+    	display: inline-block !important;
+    	margin: -80px 10px;
+    }
+
+    .blog {
+    	position: relative !important;
+		width: 100%;
+    }
+
+    .content {
+    	padding: 20px 30px;
+    }
+
+    /*.social-links {
+		
+    }*/
+
+    #social-twitter,
+	#social-facebook,
+	#social-gplus,
+	#social-instagram,
+	#social-git {
+		-webkit-tint: #fff;
+		fill: white;
+	}
 }

@@ -36,12 +36,8 @@ p {
     margin: 0 auto;
 }
 
-.space {
-    margin-top: 30px;
-}
-
 .content {
-    padding: 20px 30px;
+    padding: 20px 130px;
     font-size: 1.3em;
 }
 
@@ -92,11 +88,11 @@ p {
 }
 
 #master a:hover {
-    -webkit-transition: all 0.25s;
-    -moz-transition: all 0.25s;
-    -o-transition: all 0.25s;
-    transition: all 0.25s;
-    color: #212121;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    color: #f69988;
 }
 
 .social-links {
