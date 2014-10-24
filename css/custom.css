@@ -102,8 +102,6 @@ p {
 }
 
 .social-links li {
-    width: 34px;
-    height: 34px;
     float: left;
     margin: 0 8px;
     display: inline-block;
@@ -120,33 +118,33 @@ p {
 }
 
 #social-twitter {
-    width: 34px;
-    height: 34px;
     background: transparent url(../img/social-twitter.png) no-repeat;
 }
 
 #social-facebook {
-    width: 34px;
-    height: 34px;
     background: transparent url(../img/social-facebook.png) no-repeat;
 }
 
 #social-gplus {
-    width: 34px;
-    height: 34px;
     background: transparent url(../img/social-google.png) no-repeat;
 }
 
 #social-instagram {
-    width: 34px;
-    height: 34px;
     background: transparent url(../img/social-instagram.png) no-repeat;
 }
 
 #social-git {
+    background: transparent url(../img/social-github.png) no-repeat;
+}
+
+.social-links li,
+#social-twitter,
+#social-facebook,
+#social-gplus,
+#social-instagram,
+#social-git {
     width: 34px;
     height: 34px;
-    background: transparent url(../img/social-github.png) no-repeat;
 }
 
 #social-twitter:hover,
