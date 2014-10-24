@@ -50,3 +50,29 @@
     	margin: 0 auto;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    #master {
+        display: none !important;
+    }
+
+    #small-nav {
+        display: block;
+    }
+
+    .blog {
+        margin-top: 0px;
+    }
+
+    .navbar .title {
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 23px !important;
+        color: #fff !important;
+        border-bottom: none;
+        margin-top: 15px;
+        position: absolute;
+
+    }
+
+
+}
