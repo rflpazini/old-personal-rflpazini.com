@@ -27,10 +27,6 @@ h4 {
     color: #404040;
 }
 
-.blue {
-    color: #a0c3ff !important;
-}
-
 p {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
@@ -168,8 +164,4 @@ p {
     border-bottom: 1px solid #e7e7e7;
     text-align: center;
     font-family: 'Roboto Slab', serif; 
-}
-
-.focu :focus {
-    outline: -webkit-focus-ring-color auto 5px;
 }
