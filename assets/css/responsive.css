@@ -55,6 +55,7 @@
     	position: relative;
     	bottom: 25px !important;
     	margin: 0 auto;
+        width: 250px;
     }
 }
 
@@ -69,6 +70,10 @@
 
     .blog-content {
         margin-top: 0px;
+    }
+
+    .blog .title {
+        padding: 0;
     }
 
     .navbar .title {
