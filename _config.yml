@@ -10,12 +10,29 @@ description: > # this means to ignore newlines until "baseurl:"
 
 safe:        false
 baseurl:     /
-url: http://localhost:4000ç
+url: http://localhost:4000
 
 name: Rafael Pazini
-description: Lalalalalala
+description: #Add one later
 commentlinks: true
+url: http://rflpazini.github.io
+domain: github.io
 
+# Build settings
+markdown: kramdown
+highlighter: pygments
+
+paginate_path: 'blog/page:num'
+future:      true
+lsi:         false
+pygments:    false
+permalink:   /:title/
+paginate: 5
+
+github: [Repository metadata]
+source:      .
+destination: ./_site
+plugins:     ./_plugins
 
 # Social links 
 twitter_username: RafaelPazini
@@ -24,13 +41,3 @@ instagram_username: rafaelpazini
 facebook_username: RafaPazini
 plus_username: +RafaelPazini
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
-
-paginate_path: 'blog/page:num'
-future:      true
-lsi:         false
-pygments:    false
-permalink:   /:title/
-paginate: 5
