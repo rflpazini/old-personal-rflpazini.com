@@ -1,11 +1,11 @@
 {% include head.html %} {% include header.html %}
-<section class="container">
+<section id="all-posts">
     <div class="blog-content">
         {{ content }}
         <ul id="posts">
             {% for post in paginator.posts %} {% unless post.draft %}
             <li class="post">
-                <article class="post-content">
+                <div class="container">
                     {% if post.link %}
                     <h2 class="linktitle">
                         <a href="{{ post.link }}">{{ post.title }}</a>&nbsp;
@@ -17,16 +17,21 @@
                         <a href="{{ post.url }}" class="articletitle">{{ post.title }}</a>
                     </h2>
                     <p class="date articledate pull-right">{{ post.date | date:"%d/%m/%Y" }}</p>
-                    {% endif %} {% if post.excerpt %} {{ post.excerpt | markdownify }} {% unless post.nomore or post.quote %}
-                    <p><a href="{{ post.url }}">
+                    {% endif %}
+                    
+                    <article class="post-content">
+                        {% if post.excerpt %} {{ post.excerpt | markdownify }} {% unless post.nomore or post.quote %}
+                        <p><a href="{{ post.url }}">
                         {% if post.language == "en" %}
                         <strong>Continue reading&#8230;</strong>
                         {% else %}
                         <strong>Continue lendo&#8230;</strong>
                         {% endif %}</a>
-                    </p>
-                    {% endunless %} {% else %} {{ post.content }} {% endif %}
-                </article>
+                        </p>
+                        {% endunless %} {% else %} {{ post.content }} {% endif %}
+                    </article>
+                    <div class="line"></div>
+                </div>
             </li>
             {% endunless %} {% endfor %}
         </ul>

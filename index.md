@@ -4,7 +4,6 @@ title: Welcome! (Bem-vindo) / Wtf?
 class: home
 ---
 
-
 O intuito aqui é o seguinte. Divulgar um pouco das tecnologias, mostrar alguns trabalhos e o principal em nossa área, fazer Network.
 
 As vezes eu sinto falta de algum conteúdo em português para poder passar para os colegas de trabalho. Principalmente porque trabalho em uma pequena empresa no interior de São Paulo onde praticamente apenas umas 3 pessoas na empresa compreendem inglês claramente. Então também será uma ótima oportunidade para conseguir algum conteudo na sua linguagem nativa, através de projetos e do próprio blog.

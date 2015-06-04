@@ -30,12 +30,10 @@ h4 {
 p {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
+    padding-bottom: 25px !important;
 }
 
-.post-content {
-    padding: 20px 130px;
-    font-size: 1.3em;
-}
+
 
 .center {
     text-align: center !important;
@@ -50,6 +48,11 @@ p {
     width: 75%
 }
 
+.post-content {
+    padding: 20px 130px;
+    font-size: 1.3em;
+}
+
 .title {
     color: #a1a1a1;
     padding: 3px 0 20px 0;
@@ -61,6 +64,10 @@ p {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none
+}
+
+.blog .title {
+    padding: 20px 130px;
 }
 
 .post-meta {
@@ -120,6 +127,14 @@ p.date.articledate {
     -o-transition: all 0.2s;
     transition: all 0.2s;
     color: #f69988;
+}
+
+.line {
+    width: 100%;
+    height: 59px;
+    margin: 25px auto;
+    padding: 35px;
+    background: url(../img/line-rfl-gray.png) no-repeat center;
 }
 /* -- Navbar -- */
 
