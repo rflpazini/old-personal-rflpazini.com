@@ -33,8 +33,6 @@ p {
     padding-bottom: 25px !important;
 }
 
-
-
 .center {
     text-align: center !important;
 }
@@ -179,8 +177,6 @@ p.date.articledate {
 .social-links {
     min-width: 50px;
     max-width: 300px;
-    /*width: 250px;*/
-    
     height: 34px;
     list-style: none;
     display: block;
@@ -190,6 +186,20 @@ p.date.articledate {
     float: left;
     margin: 0 8px;
     display: inline-block;
+}
+
+.social-links li:nth-child(even):hover {
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+.social-links li:nth-child(odd):hover {
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
 }
 
 .social-links li a {
@@ -230,15 +240,4 @@ p.date.articledate {
 #social-git {
     width: 34px;
     height: 34px;
-}
-
-#social-twitter:hover,
-#social-facebook:hover,
-#social-gplus:hover,
-#social-instagram:hover,
-#social-git:hover {
-    -webkit-transform: rotate(5deg);
-    -moz-transform: rotate(5deg);
-    -o-transform: rotate(5deg);
-    transform: rotate(5deg);
 }
