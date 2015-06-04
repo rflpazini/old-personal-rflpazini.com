@@ -32,12 +32,12 @@
 
     }
 
-    .blog {
+    .blog-content {
     	position: relative !important;
 		width: 100%;
     }
 
-    .content {
+    .post-content {
     	padding: 20px 30px;
     }
 
@@ -61,7 +61,7 @@
         display: block;
     }
 
-    .blog {
+    .blog-content {
         margin-top: 0px;
     }
 

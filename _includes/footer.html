@@ -1,0 +1,48 @@
+<ul class="social-links">
+    {% if site.twitter_username %}
+    <li>
+        <a id="social-twitter" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a>
+    </li>
+    {% endif %} {% if site.facebook_username %}
+    <li>
+        <a id="social-facebook" href="https://facebook.com/{{ site.facebook_username }}" target="_blank">Facebook</a>
+    </li>
+    {% endif %} {% if site.plus_username %}
+    <li>
+        <a id="social-gplus" href="https://plus.google.com/{{ site.plus_username }}" target="_blank">Google+</a>
+    </li>
+    {% endif %} {% if site.instagram_username %}
+    <li>
+        <a id="social-instagram" href="https://instagram.com/{{ site.instagram_username }}" target="_blank">Instagram</a>
+    </li>
+    {% endif %} {% if site.github_username %}
+    <li>
+        <a id="social-git" href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
+    </li>
+    {% endif %}
+</ul>
+
+<!-- jQuery Infinite Scrolling -->
+<script src='{{ site.baseurl }}assets/js/jquery.infinitescroll.min.js'></script>
+<script>
+// infinitescroll() is called on the element that surrounds
+// the items you will be loading more of
+$('ul#posts').infinitescroll({
+  navSelector   : "p.pagination",
+          // selector for the paged navigation (it will be hidden)
+  nextSelector  : "p.pagination a.older",
+          // selector for the NEXT link (to page 2)
+  itemSelector  : "#content ul#posts li.post"
+          // selector for all items you'll retrieve
+});
+</script>
+
+<!-- JS -->
+<script src="{{ site.baseurl }}assets/js/jquery-ui-1.10.4.min.js"></script>
+<script src="{{ site.baseurl }}assets/js/modernizr.js"></script>
+<script src="{{ site.baseurl }}assets/js/toucheffects.js"></script>
+<script src="{{ site.baseurl }}assets/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}assets/js/fokus.min.js"></script>
+</body>
+
+</html>
