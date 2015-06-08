@@ -4,7 +4,7 @@ title: Welcome! (Bem-vindo) / Wtf?
 class: home
 ---
 
-O intuito aqui é divulgar um pouco das tecnologias, mostrar alguns trabalhos e o principal em nossa área, fazer Network e colaborar com o mundo open source.
+O intuito é divulgar um pouco das tecnologias, mostrar alguns trabalhos e o principal em nossa área, fazer Network e colaborar com o mundo open source.
 
 As vezes eu sinto falta de algum conteúdo em português para poder passar para os colegas de trabalho. Principalmente porque trabalho em uma pequena empresa no interior de São Paulo onde praticamente apenas umas 3 pessoas compreendem inglês claramente. Então será uma ótima oportunidade para conseguir colaborar com algum conteúdo na sua linguagem nativa, através de projetos e do próprio blog.
 
