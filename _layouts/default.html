@@ -1,39 +1,49 @@
-{% include head.html %} {% include header.html %}
+{% include head.html %} 
+
+{% include header.html %}
+
 <section id="all-posts">
     <div class="blog-content">
         {{ content }}
         <ul id="posts">
-            {% for post in paginator.posts %} {% unless post.draft %}
+            {% for post in paginator.posts %} 
+            {% unless post.draft %}
             <li class="post">
-                
-                    {% if post.link %}
-                    <h2 class="linktitle">
+                {% if post.link %}
+                <h2 class="linktitle">
                         <a href="{{ post.link }}">{{ post.title }}</a>&nbsp;
                         <a href="{{ post.url }}" class="infin">&infin;</a>
-                    </h2> {% elsif post.quote %}
-                    <p class="date articledate center">{{ post.date | date:"%d/%m/%Y" }}</p>
-                    {% else %}
-                    <h2 class="title">
+                    </h2> 
+                {% elsif post.quote %}
+                <p class="date articledate center">{{ post.date | date:"%d/%m/%Y" }}</p>
+                {% else %}
+                <h2 class="title">
                         <a href="{{ post.url }}" class="articletitle">{{ post.title }}</a>
                     </h2>
-                    <p class="date articledate center">{{ post.date | date:"%d/%m/%Y" }}</p>
-                    {% endif %}
-                    
-                    <article class="post-content">
-                        {% if post.excerpt %} {{ post.excerpt | markdownify }} {% unless post.nomore or post.quote %}
-                        <p><a href="{{ post.url }}">
+                <p class="date articledate center">{{ post.date | date:"%d/%m/%Y" }}</p>
+                {% endif %}
+
+                <article class="post-content">
+                    {% if post.excerpt %} 
+                    {{ post.excerpt | markdownify }} 
+                    {% unless post.nomore or post.quote %}
+                    <p><a href="{{ post.url }}">
                         {% if post.language == "en" %}
                         <strong>Continue reading&#8230;</strong>
                         {% else %}
                         <strong>Continue lendo&#8230;</strong>
                         {% endif %}</a>
-                        </p>
-                        {% endunless %} {% else %} {{ post.content }} {% endif %}
-                    </article>
-                    <div class="line"></div>
-                
+                    </p>
+                    {% endunless %}
+
+                    {% else %} 
+                        {{ post.content }}
+                    {% endif %}
+                </article>
+                <div class="line"></div>
             </li>
-            {% endunless %} {% endfor %}
+            {% endunless %} 
+            {% endfor %}
         </ul>
     </div>
 </section>
