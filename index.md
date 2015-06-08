@@ -10,7 +10,7 @@ As vezes eu sinto falta de algum conteúdo em português para poder passar para 
 
 **Mas afinal, quem sou?** Meu nome é Rafael Pazini, sou estudante de Ciência da Computação, tenho 21 anos e trabalho atualmente em uma empresa chamada [Evolua][1] como Programador no setor de Pesquisa e Desenvolvimento. Procuro sempre estar contribuindo com comunidades open sources, como [Mozilla] [2] e também mantenho alguns projetos no meu [Github] [3].
 
-No momento também realizo um projeto de iniciação ciêntifica que em breve darei mais detalhes sobre. E 
+No momento também realizo um projeto de iniciação ciêntifica que em breve darei mais detalhes sobre.
 
 
 [1]: http://evoluaeducacao.com.br/ "Evolua"
