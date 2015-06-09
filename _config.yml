@@ -10,7 +10,7 @@ domain: github.io
 safe:        false
 baseurl:     /
 url: http://localhost:4000
-
+excerpt_separator: <!--more-->
 
 
 # Build settings
