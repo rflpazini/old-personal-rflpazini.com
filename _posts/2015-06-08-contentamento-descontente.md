@@ -8,10 +8,10 @@ description: Neste primeiro post irei tratar de um assunto que é muito comum pa
 ![No Fellings astronalta](/assets/img/posts/nofeelings.jpg)
 
 Neste primeiro post irei tratar de um assunto que é muito comum para minha geração, digamos que é o "descontentamento" com a nossa situação atual. Seja ela na universidade ou no trabalho ou em ambos.
-
+<!--more-->
 Bom, todos os dias acordamos e nos deparamos às vezes com situações nas quais não gostaríamos de estar seja ela em nossas rotinas ou em outras formas. A verdade é que queremos estar sempre enfrentando **NOVAS** situações e **NOVOS** desafios, no meu caso como desenvolvedor desafios servem de combustível para você melhorar e se auto-desafiar muitas vezes.
 
-<!--more-->
+
 
 Sempre gosto de algo novo, de projetos desafiadores que poderiam mudar o mundo (um tanto quanto surrealista, mas é verdade). Uma frase que sempre levo comigo é a seguinte: "Que homem é o homem que não torna o mundo melhor?”. Basicamente ela diz que se você é capaz de fazer algo para tornar o mundo melhor, então tem a obrigação de fazer e com certeza é isto que todos desejam fazer, não simplesmente ficar preenchendo relatórios ou ouvindo “ideias revolucionarias” na maioria das vezes de chefes sem preparo e que daqui dois ou três dias vão mudar de ideia sobre a tal "ideia revolucionaria".
 
