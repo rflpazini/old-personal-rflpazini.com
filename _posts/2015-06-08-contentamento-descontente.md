@@ -2,6 +2,7 @@
 layout: post
 title: Contentamento, descontente!
 description: Neste primeiro post irei tratar de um assunto que é muito comum para minha geração, digamos que é o "descontentamento" com a nossa situação atual. Seja ela na universidade ou no trabalho ou em ambos.
+author: Rafael Pazini
 
 ---
 

@@ -1,87 +1,18 @@
-/*
-* The CSS responsive for this site
-* Made by me (Rafael Pazini) - 21/10/2014
-*/
-
-@media only screen and (min-width: 900px) {
-    
-    .home .post-content,
-    .blog .post-content {
-        min-width: 400px;
-        max-width: 1050px;
-    }
-
-	.social-links {
-		top: 25px;
-    	right: 15px;
-    	position: absolute;
-	}
-
-	#logo {
-		padding: 260px 0 40px 0;
-	}
+@media only screen and (min-width:900px){.home .post-content,
+.blog .post-content{min-width:400px;max-width:1050px;}
+.social-links{top:25px;right:15px;position:absolute;}
+#logo{padding:260px 0 40px 0;}
 }
-
-@media only screen and (max-width: 900px) {
-    #master {
-        box-shadow: none;
-        display: block !important;
-        width: 100% !important;
-        position: static !important;
-        padding-top: 45px !important;
-    }
-
-    #master ul li {
-    	position: relative;
-    	display: inline-block !important;
-    	margin: 0px 10px;
-
-    }
-
-    .blog-content {
-    	position: relative !important;
-		width: 100%;
-    }
-
-    .post-content {
-    	padding: 20px 30px;
-    }
-
-    #logo {
-    	padding: 120px 0;
-    }
-
-    .social-links {
-    	position: relative;
-    	bottom: 25px !important;
-    	margin: 0 auto;
-        width: 250px;
-    }
+@media only screen and (max-width:900px){#master{box-shadow:none;display:block !important;width:100% !important;position:static !important;padding-top:45px !important;}
+#master ul li{position:relative;display:inline-block !important;margin:0px 10px;}
+.blog-content{position:relative !important;width:100%;}
+.post-content{padding:20px 30px;}
+#logo{padding:120px 0;}
+.social-links{position:relative;bottom:25px !important;margin:0 auto;width:250px;}
 }
-
-@media only screen and (max-width: 480px) {
-    #master {
-        display: none !important;
-    }
-
-    #small-nav {
-        display: block;
-    }
-
-    .blog-content {
-        margin-top: 0px;
-    }
-
-    .blog .title {
-        padding: 0;
-    }
-
-    .navbar .title {
-        font-family: 'Roboto', sans-serif !important;
-        font-size: 23px !important;
-        color: #fff !important;
-        border-bottom: none;
-        margin: 15px 0 0 10px;
-        position: absolute;
-    }
+@media only screen and (max-width:480px){#master{display:none !important;}
+#small-nav{display:block;}
+.blog-content{margin-top:0px;}
+.blog .title{padding:0;}
+.navbar .title{font-family:'Roboto', sans-serif !important;font-size:23px !important;color:#fff !important;border-bottom:none;margin:15px 0 0 10px;position:absolute;}
 }
