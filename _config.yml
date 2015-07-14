@@ -6,6 +6,7 @@ description: #Add one later
 commentlinks: true
 url: http://rflpazini.github.io
 domain: github.io
+google: UA-65133136-1
 
 safe:        false
 baseurl:     /
