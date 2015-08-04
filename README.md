@@ -31,4 +31,4 @@ It's all based on [Jekyll](http://jekyllrb.com/), a ruby platform that make easi
 To access the website, type `localhost:4000` in your favorite browser...
 
 ##License 
-[MIT License]() :copyright: Rafael Pazini
+[MIT License](http://rflpazini.mit-license.org) :copyright: Rafael Pazini
