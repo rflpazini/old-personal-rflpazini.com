@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test JustNum</title>
+</head>
+
+<body>
+	<h1>Justnum...</h1>
+    <input type="text" name="NoDestroy" value="">
+    <input id="destroy" type="text" name="Destroy" value="">
+    <br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="justnum.js"></script>
+    <script>
+    $('input').justnum();
+    $('#destroy').justnum('destroy');
+    </script>
+</body>
+
+</html>
