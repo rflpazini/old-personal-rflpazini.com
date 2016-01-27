@@ -2,15 +2,14 @@
 title: Rafael Pazini
 email: rflpazini@gmail.com
 name: Rafael Pazini
-description: #Add one later
+description: This is my project for my personal site/blog to talk about front-end and back-end development.
 commentlinks: true
-url: http://rflpazini.github.io
-domain: github.io
+url: http://rflpazini.com
+domain: rflpazini.com
 google: UA-65133136-1
 
 safe:        false
 baseurl:     /
-url: http://localhost:4000
 excerpt_separator: <!--more-->
 
 
@@ -30,10 +29,9 @@ source:      .
 destination: ./_site
 plugins:     ./_plugins
 
-# Social links 
+# Social links
 twitter_username: RafaelPazini
 github_username:  rflpazini
 instagram_username: rafaelpazini
 facebook_username: RafaPazini
 plus_username: +RafaelPazini
-
