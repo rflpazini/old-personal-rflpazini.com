@@ -129,15 +129,15 @@ p {
 }
 
 #master a:hover {
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
     color: #f69988;
 }
 
 #master i.fa {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .line {
