@@ -93,7 +93,6 @@ p {
 }
 
 li:before {
-    content: "• ";
     color: #b0120a;
 }
 
