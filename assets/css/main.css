@@ -92,6 +92,11 @@ p {
     list-style-type: disc;
 }
 
+li:before {
+    content: "• ";
+    color: #b0120a;
+}
+
 #master {
     position: fixed !important;
     top: 0;
