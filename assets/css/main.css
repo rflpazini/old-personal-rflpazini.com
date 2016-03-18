@@ -86,14 +86,20 @@ p {
 
 .post ul {
 	padding-left: 40px;
+  list-style: none;
 }
 
-.post ul li {
-    list-style-type: disc;
-}
 
-li:before {
-    color: #b0120a;
+.post li:before {
+  color: #b0120a;
+  content: '\2022';
+  display: block;
+  font-size: 25px !important;
+  left: -20px;
+  max-height: 0px;
+  max-width: 0px;
+  position: relative;
+  top: -5px;
 }
 
 #master {
