@@ -6,6 +6,7 @@
 body,
 html {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.8em;
 }
 
 a {
@@ -186,6 +187,10 @@ blockquote p {
     font-style: italic;
 }
 
+.post-content {
+  line-height: 1.8em;
+}
+
 .post-content img {
     padding: 8px;
     border: 1px solid #DBDBDB !important;
@@ -199,6 +204,10 @@ blockquote p {
 .post-content img:after {
     width: 100%;
     text-align: center !important;
+}
+
+.post-content h2 {
+  padding-bottom: 25px;
 }
 
 .navbar {

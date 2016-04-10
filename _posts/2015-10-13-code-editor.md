@@ -20,7 +20,8 @@ Mas chega de enrolação e vamos aos editores. São eles:
 
 Como sou bem curioso quando se trata de novas tecnologias, novas interfaces e coisas do gênero, já testei quase todas :D. Então vamos ver um pouco sobre cada um deles.
 
-##Sublime
+Sublime
+---
 
 ![SublimeText3](/assets/img/posts/sublime.jpg)
 
@@ -32,7 +33,8 @@ Eu uso vários plugins no meu Sublime, como por exemplo, [Emmet](http://emmet.io
 
 Caso queira saber mais detalhadamente do que o sublime é capaz, existe um [guia](http://www.sublimetext.com/docs/3/) feito pelos próprios desenvolvedores que explica detalhadamente algumas funções.
 
-##Atom
+Atom
+---
 
 ![Atom](/assets/img/posts/atom.jpg)
 
@@ -50,7 +52,8 @@ Além de todas as features legais que já são nativas nele, como a auto ideaç�
 
 Vale a pena conferir!
 
-##Brackets
+Brackets
+---
 
 ![Brackets](/assets/img/posts/brackets.jpg)
 
@@ -62,7 +65,8 @@ Outra função que se destaca nele é a possibilidade de acessar rapidamente as 
 
 Assim como os outros podemos instalar plugins nele para facilitar nosso trabalho. Indico para quem está começando e quer saber e aprender com o que realmente está mexendo, além dele ter um servidor http nativo, o que pode ajudar muito na hora de desenvolver.
 
-##VIM
+VIM
+---
 
 ![VIM](/assets/img/posts/vim.jpg)
 
