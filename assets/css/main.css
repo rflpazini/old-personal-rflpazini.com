@@ -6,7 +6,6 @@
 body,
 html {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.8em;
 }
 
 a {
@@ -100,7 +99,7 @@ p {
   max-height: 0px;
   max-width: 0px;
   position: relative;
-  top: -5px;
+  /*top: -5px;*/
 }
 
 #master {
