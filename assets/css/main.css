@@ -99,6 +99,7 @@ p {
   max-height: 0px;
   max-width: 0px;
   position: relative;
+  top: -5px;
 }
 
 #master {
