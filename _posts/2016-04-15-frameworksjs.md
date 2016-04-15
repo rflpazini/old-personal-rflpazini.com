@@ -75,14 +75,16 @@ Ele é bem versátil e minimalista, por exemplo ele não vem com sua própria "t
 
 Por ela ser tão leve, ele brilha quando falamos de aplicações simples "single page" e exemplos disso são as redes sociais Twitter e Pinterest.
 
-Como eu disse o backbone é bem minimalista e dependendo do seu nível de experiência com o desenvolvimento em js, isso pode ser uma benção ou um desafio. Existem vários plugins e bibliotecas que podem ser utilizados no desenvolvimento com o Backbone, e quem decide isso é o desenvolvedor, configurando tudo manualmente. Então o que pode ser uma relação de amor para os mais experientes, pode se tornar um desafio para quebrar a cabeça para os marinheiros de primeira viagem.
+Como eu disse o backbone é bem minimalista e dependendo do seu nível de experiência com o desenvolvimento em JS, isso pode ser uma benção ou um desafio. Existem vários plugins e bibliotecas que podem ser utilizados no desenvolvimento com o Backbone, e quem decide isso é o desenvolvedor, configurando tudo manualmente. Então o que pode ser uma relação de amor para os mais experientes, pode se tornar um desafio para quebrar a cabeça para os marinheiros de primeira viagem.
 
 Como de costume, toda a documentação necessária do Backbone se encontra no site oficial do framework [backbonejs.org](http://backbonejs.org). Lá também existe uma coleção de projetos em que ele é utilizado, assim você pode tirar uma base de como funciona na prática.
 
+Mão na massa
+---
 
 Agora que você conhece um pouco mais das características de cada um deles, é hora de escolher o que você sentiu mais afinidade e como dizemos "meter a cara" na documentação, implementar alguns projetos e ir se acostumando com as arquiteturas.
 
-O futuro do desenvolvimento de aplicações web realmente utilizará as frameworks. Então não custa nada saber utilizá-las. Em muitos vagas de empregos, elas já são um item requerido *(pelo menos uma delas)*. 
+O futuro do desenvolvimento de aplicações web realmente utilizará as frameworks. Então não custa nada saber utilizá-las. Em muitos vagas de empregos, elas já são um item requerido *(pelo menos uma delas)*. E colocar que você tem domínio de uma delas no CV irá lhe dar um brilho extra.
 
 Uma dica para quem está começando a aprender novas tecnologias é utilizar*(e muito)* o [StackoverFLow](http://stackoverflow.com). Lá você faz perguntas, responde e o mais legal é que pode encontrar com as pessoas responsáveis pelos projetos. Por exemplo, o ember utiliza ele como um dos principais meios de comunicação, seus desenvolvedores estão sempre respondendo as questões sobre a framework no fórum. Mãos a obra!
 
