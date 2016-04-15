@@ -6,14 +6,14 @@ author: Rafael Pazini
 
 ![Frameworks JS](/assets/img/posts/frameworks.jpg)
 
-Atualmente encontro-me sem emprego, uma coisa que não está atrapalhando em nada minha vida, pois estou estudando e tudo mais. Porém, quero arrumar algo logo para poder colaborar em algum projeto grande, uma empresa legal, quem sabe até uma multinacional (por que não?!). Mas o que eu vejo hoje é que em todos os lugares pedem experiência com algum framework JS, se você nunca ouviu falar de algum deles amigo, está na hora de correr atrás!<!--more--> 
+Se você trabalha ou pelo menos tem uma pequena relação com a web, provavelmente já deve ter notado que nos últimos dois anos um dos assuntos mais comentados são os **Frameworks Js**. Se você nunca ouviu falar de algum deles amigo, esta na hora de correr atrás!<!--more--> 
 
-Frameworks existem várias no mercado, mas as que estão em alta, principalmente no meio front-end são elas: Angular, React, Ember e Backbone. Estas 4 são as frameworks JavaScript mais utilizadas no momento.
+Existem várias frameworks no mercado, mas as que estão em alta no meio front-end são elas: Angular, React, Ember e Backbone. Estas 4 são as frameworks JavaScript mais utilizadas no momento.
 
 Mas afinal, o que são estas frameworks?
 ---
 
-Elas agilizam o desenvolvimento de novas aplicações para web, evitam recarregamentos desnecessários de página, facilitam o data binding, organizam nossa arquitetura de desenvolvimento pois são baseadas em MVC *(mais um motivo para dizermos que elas facilitam a vida, organização é tudo...)*. 
+Elas agilizam o desenvolvimento de novas aplicações para web, evitam recarregamentos desnecessários de página, facilitam o data binding e organizam nossa arquitetura de desenvolvimento pois são baseadas em MVC *(mais um motivo para dizermos que elas facilitam a vida, organização é tudo...)*. 
 
 Você deve estar se perguntando o porquê de elas estarem sendo tão cobiçadas no mundo do desenvolvimento?! Em um resumo, podemos dizer que elas nos ajudam a criar uma aplicação com UI mais responsivas, ou seja, as aplicações se tornam cada vez mais atrativas para o uso. Já que com o uso destas frameworks, carregamentos podem ser feitos em blocos dispensando a atualização total da página ou a navegação para uma nova área.
 
@@ -24,22 +24,59 @@ Angular
 
 É feita e mantida pelo Google. Segundo a descrição que eles mesmo dão para sua framework ela da "super poderes" para seu HTML, já que para utilizar a mesma, você acrescenta algumas tags em seu html, é desta forma que os dados são processados pela framework.
 
-Nela temos uma das questões mais amadas da framework o "two-way data binding", que permite com que as informações sejam atualizadas tanto do View quanto do Model. Esta forma de implementação do data binding reduz a quantidade de código necessária para criar novas dynamic views.
+Nela temos uma das questões mais amadas da framework o "two-way data binding", que permite com que as informações sejam atualizadas tanto do View quanto do Model. Esta forma de implementação do data binding reduz a quantidade de código necessária para criar novas dynamic views. Mas ao mesmo tempo que ela "facilita a vida" pode dificultá-la também, já que alimentando sua aplicação de dois lugares vai complicar o debug e prejudicar a performance.
 
-A curva de aprendizado da mesma é um tanto quanto mais elevada, já que possui várias funções exclusivas do framework. As vezes lembra  algumas coisas de Java *(já que a mesma foi produzida por desenvolvedores Java, nada contra pois é uma das minhas linguagens favoritas)*.
+Falando em performance, dependendo da complexidade da aplicação que está sendo criada, o Angular se torna lento devido a sua arquitetura. Apesar disto ela pode ser uma boa opção para aplicações que não sejam muito grandes em que o problema com a lentidão não apareça. 
 
-Algumas vezes, dependendo da complexidade da aplicação que está sendo criada, o Angular se torna lenta devido a sua arquitetura, apesar disto ela pode ser uma boa opção para aplicações que não sejam muito grandes em que o problema com a lentidão não apareça. 
+A curva de aprendizado da mesma é um tanto quanto mais elevada, já que possui várias funções exclusivas do framework. Sua arquitetura tem algumas influências de Java *(já que a mesma foi produzida por desenvolvedores Java)*.
 
-A versão 2.0 do Angular está sendo produzida e eles prometem corrigir este problema com a lentidão em aplicações complexas, pois estão reestruturando totalmente a framework.
+Sua versão 2.0 está sendo produzida e eles prometem corrigir este problema com a lentidão em aplicações complexas, pois estão reestruturando totalmente a framework.
 
 Para aprender mais sobre o Angular, você pode visitar o site oficial do projeto 
-[AngularJs.org](https://angularjs.org/), lá você encontra até um curso grátis do disponibilizado pelo CodeSchool sobre a framework.
+[AngularJs.org](https://angularjs.org/), lá você encontra até um curso grátis do disponibilizado pelo CodeSchool sobre ele.
 
 Ember
 ---
 
 EmberJs é uma framework mantida pela comunidade, foi criada em 2011 por Yehuda Katz, que também fazia parte do core team de Rails. 
-Assim como o Angular tem uma auto descrição "uma framework para criar aplicações web ambiciosas" e da mesma maneira que Angular tem uma uma influência do Java, o Ember tem uma influência do Rails. 
+Assim como o Angular tem uma auto descrição "uma framework para criar aplicações web ambiciosas" e da mesma maneira que Angular tem uma uma influência do Java, o Ember tem uma influência do Rails *(como eu disse, o seu criador fez parte do core team do Rails)*. 
+
+Costumamos dizer que quando você trabalha com o Ember, você deve fazer as coisas do jeito dele. Quando você vai começar a criar um novo app a única coisa que precisa é do built-in, ali irão ficar as rotas, bibliotecas temporárias e tudo mais que você sempre tem que criar. Isso evita que você fique "recriando a roda" toda vez que começa uma nova aplicação, e sem perder tempo com isso você poderá se preocupar com as outras coisas que realmente serão importantes para o projeto.
+
+Os criadores do Ember disponibilizaram uma ferramenta*(command line tool)* que se chama [EmberCLI](http://ember-cli.com). Os desenvolvedores utilizam ela para minimizar CSS e JS, compilar o SASS entre outras coisas. Então se você já é desenvolvedor web deve estar se perguntando - Poxa, mas é um task runner? - Sim, exatamente. Ela faz o mesmo trabalho que o [Grunt](http://gruntjs.com) ou [Gulp](http://gulpjs.com) a única diferença é que foi desenvolvida para trabalhar com o Ember. Isso não significa que você deve trocar seu task runner atual por ela, mas caso ainda não tenha um de costume é interessante dar uma olhada neste.
+
+O Ember também implementa o "two-way data binding", porém de uma forma diferente do Angular. Não vou entrar muito em detalhes, já que o time de desenvolvimento anunciou que nas próximas versões da framework irá abandonar esta implementação. 
+
+Ela é uma excelente framework para trabalhar com projetos que variam de médios a grandes, existem algumas restrições que poderiam e irão ser melhoradas num futuro próximo - como a renderização server-side que atualmente não está 100%, mas os commits estão a todo vapor para melhorá-la.
+
+A melhor forma de entender mais sobre o Ember, é acessando seu próprio site [emberjs.com](http://emberjs.com). E para entender ainda mais sobre a mesma veja a página da [Comunidade](http://emberjs.com/community/), lá você vai encontrar todos os canais que os desenvolvedores usam para se comunicar e como interagir com eles, tirar dúvidas e quem sabe até colaborar com algum commit.
+
+React
+---
+
+Este é praticamente o "queridinho" do momento, o React foi criado em 2013 e é mantido pelo Facebook. Ele não tem nenhuma auto descrição ou algo do tipo, a única coisa que todos dizem e o facebook também é que o React é o V*(View)* do MVC.
+
+A coisa mais legal do react é que ele é extremamente rápido, o que diferencia ele das demais frameworks. O responsável por esta agilidade é o Virtual DOM, quando fazemos alguma alteração na aplicação ela é primeiro escrita no virtual DOM que compara os dados com os dados que existem no Real DOM e só depois atualiza os dados, mandando apenas o que foi alterado e não as informações completas. Isso aumenta e muito o desempenho da aplicação, já que as alterações no Real DOM são feitas quase que em segundo plano.
+
+Outra parte bastante interessante desta framework é o desenvolvimento em componentes. Você pode criar componentes e reutiliza-los quando e quantas vezes quiser, diminuindo muito o tamanho dos códigos que você irá escrever. Aliás, este é o primeiro pensamento que qualquer um deve ter quando começa a trabalhar com React - no site oficial da framework existe um [artigo](https://facebook.github.io/react/docs/thinking-in-react.html) sobre isto - quebrar o layout em partes para começar a desenvolver a aplicação.
+
+Além de rápido, o React é fácil de se aprender já que é praticamente JavaScript puro*(se você é familiar com JS vá em frente)*. Existe também o [React Native](http://facebook.github.io/react-native/) que permite criar aplicações para iOS e Android usando react.
+
+Por ser a framework mais nova, o React está sempre em atualização. Então é importante ficar sempre de olho na documentação e nos blogs do Facebook onde todas as atualizações são postadas.
+
+No site oficial do [ReactJs](https://facebook.github.io/react/index.html) além de toda a documentação e do passo a passo para iniciar a trabalhar com ele, você irá encontrar um pequeno tutorial para ir se familiarizando com a framework.
+
+Backbone
+---
+
+
+
+
+
+
+
+
+ 
 
 
 
