@@ -38,7 +38,7 @@ Para aprender mais sobre o Angular, você pode visitar o site oficial do projeto
 Ember
 ---
 
-EmberJs é uma framework mantida pela comunidade, foi criada em 2011 por Yehuda Katz, que também fazia parte do core team de Rails. 
+EmberJs é um framework mantido pela comunidade, foi criada em 2011 por Yehuda Katz, que também fazia parte do core team de Rails. 
 Assim como o Angular tem uma auto descrição "uma framework para criar aplicações web ambiciosas" e da mesma maneira que Angular tem uma uma influência do Java, o Ember tem uma influência do Rails *(como eu disse, o seu criador fez parte do core team do Rails)*. 
 
 Costumamos dizer que quando você trabalha com o Ember, você deve fazer as coisas do jeito dele. Quando você vai começar a criar um novo app a única coisa que precisa é do built-in, ali irão ficar as rotas, bibliotecas temporárias e tudo mais que você sempre tem que criar. Isso evita que você fique "recriando a roda" toda vez que começa uma nova aplicação, e sem perder tempo com isso você poderá se preocupar com as outras coisas que realmente serão importantes para o projeto.
@@ -69,7 +69,22 @@ No site oficial do [ReactJs](https://facebook.github.io/react/index.html) além 
 Backbone
 ---
 
+O Backbone é um dos mais antigos frameworks desta seleção que estamos falando, sua primeira versão foi lançada em 2010. Uma de suas maiores vantagens é que ela é extremamente leve para uma framework, apenas 6.3kb. Alguns sites que usam o backbone são Twitter e Pinterest.
 
+Ele é bem versátil e minimalista, por exemplo ele não vem com sua própria "template engine" *(além do básico que é o Underscore)*, deixando assim o desenvolvedor fazer suas próprias escolhas, quais plugins utilizar, quais engines o que a torna muito flexível podendo adapta-la da forma que queremos trabalhar.
+
+Por ela ser tão leve, ele brilha quando falamos de aplicações simples "single page" e exemplos disso são as redes sociais Twitter e Pinterest.
+
+Como eu disse o backbone é bem minimalista e dependendo do seu nível de experiência com o desenvolvimento em js, isso pode ser uma benção ou um desafio. Existem vários plugins e bibliotecas que podem ser utilizados no desenvolvimento com o Backbone, e quem decide isso é o desenvolvedor, configurando tudo manualmente. Então o que pode ser uma relação de amor para os mais experientes, pode se tornar um desafio para quebrar a cabeça para os marinheiros de primeira viagem.
+
+Como de costume, toda a documentação necessária do Backbone se encontra no site oficial do framework [backbonejs.org](http://backbonejs.org). Lá também existe uma coleção de projetos em que ele é utilizado, assim você pode tirar uma base de como funciona na prática.
+
+
+Agora que você conhece um pouco mais das características de cada um deles, é hora de escolher o que você sentiu mais afinidade e como dizemos "meter a cara" na documentação, implementar alguns projetos e ir se acostumando com as arquiteturas.
+
+O futuro do desenvolvimento de aplicações web realmente utilizará as frameworks. Então não custa nada saber utilizá-las. Em muitos vagas de empregos, elas já são um item requerido *(pelo menos uma delas)*. 
+
+Uma dica para quem está começando a aprender novas tecnologias é utilizar*(e muito)* o [StackoverFLow](http://stackoverflow.com). Lá você faz perguntas, responde e o mais legal é que pode encontrar com as pessoas responsáveis pelos projetos. Por exemplo, o ember utiliza ele como um dos principais meios de comunicação, seus desenvolvedores estão sempre respondendo as questões sobre a framework no fórum. Mãos a obra!
 
 
 
