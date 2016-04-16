@@ -12,7 +12,7 @@ Como qualquer apresentação, vamos as formalidades. Quem sou eu?
 
 *   Nome: Rafael Pazini
 *   Ocupação: Estudante de Ciência da Computação
-*   Paixões: Open Source, desenvolvimento web e mobile
+*   Paixões: Open source, desenvolvimento web, mobile e café
 *   Idade: 21 anos;
 
 Como objetivos em andamento, contribuo com comunidades open sources, como [Mozilla][1] e mantenho alguns projetos no [Github][2]. Se quiser saber um pouco mais, fique a vontade para olhar meu [CV][3] ou entrar em contato comigo
