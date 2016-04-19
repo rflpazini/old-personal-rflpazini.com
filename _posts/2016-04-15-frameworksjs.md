@@ -13,7 +13,7 @@ Existem várias frameworks no mercado, mas as que estão em alta no meio front-e
 Mas afinal, o que são estas frameworks?
 ---
 
-Elas agilizam o desenvolvimento de novas aplicações para web, evitam recarregamentos desnecessários de página, facilitam o data binding e organizam nossa arquitetura de desenvolvimento pois são baseadas em MVC *(mais um motivo para dizermos que elas facilitam a vida, organização é tudo...)*. 
+Elas agilizam o desenvolvimento de novas aplicações para web, evitam recarregamentos desnecessários de página, facilitam o data binding e organizam nossa arquitetura de desenvolvimento pois implementam MVC *(mais um motivo para dizermos que elas facilitam a vida, organização é tudo...)*. 
 
 Você deve estar se perguntando o porquê de elas estarem sendo tão cobiçadas no mundo do desenvolvimento?! Em um resumo, podemos dizer que elas nos ajudam a criar uma aplicação com UI mais responsivas, ou seja, as aplicações se tornam cada vez mais atrativas para o uso. Já que com o uso destas frameworks, carregamentos podem ser feitos em blocos dispensando a atualização total da página ou a navegação para uma nova área.
 
@@ -33,7 +33,7 @@ A curva de aprendizado da mesma é um tanto quanto mais elevada, já que possui 
 Sua versão 2.0 está sendo produzida e eles prometem corrigir este problema com a lentidão em aplicações complexas, pois estão reestruturando totalmente a framework.
 
 Para aprender mais sobre o Angular, você pode visitar o site oficial do projeto 
-[AngularJs.org](https://angularjs.org/), lá você encontra até um curso grátis do disponibilizado pelo CodeSchool sobre ele.
+[angularjs.org](https://angularjs.org/), lá você encontra até um curso grátis do disponibilizado pelo CodeSchool sobre ele.
 
 Ember
 ---
@@ -43,7 +43,7 @@ Assim como o Angular tem uma auto descrição "uma framework para criar aplicaç
 
 Costumamos dizer que quando você trabalha com o Ember, você deve fazer as coisas do jeito dele. Quando você vai começar a criar um novo app a única coisa que precisa é do built-in, ali irão ficar as rotas, bibliotecas temporárias e tudo mais que você sempre tem que criar. Isso evita que você fique "recriando a roda" toda vez que começa uma nova aplicação, e sem perder tempo com isso você poderá se preocupar com as outras coisas que realmente serão importantes para o projeto.
 
-Os criadores do Ember disponibilizaram uma ferramenta*(command line tool)* que se chama [EmberCLI](http://ember-cli.com). Os desenvolvedores utilizam ela para minimizar CSS e JS, compilar o SASS entre outras coisas. Então se você já é desenvolvedor web deve estar se perguntando - Poxa, mas é um task runner? - Sim, exatamente. Ela faz o mesmo trabalho que o [Grunt](http://gruntjs.com) ou [Gulp](http://gulpjs.com) a única diferença é que foi desenvolvida para trabalhar com o Ember. Isso não significa que você deve trocar seu task runner atual por ela, mas caso ainda não tenha um de costume é interessante dar uma olhada neste.
+Os criadores do Ember disponibilizaram uma ferramenta*(command line tool)* que se chama [Ember CLI](http://ember-cli.com). Os desenvolvedores utilizam ela para minimizar CSS e JS, compilar o SASS entre outras coisas. Então se você já é desenvolvedor web deve estar se perguntando - Poxa, mas é um task runner? - Sim, exatamente. Ela faz o mesmo trabalho que o [Grunt](http://gruntjs.com) ou [Gulp](http://gulpjs.com) a única diferença é que foi desenvolvida para trabalhar com o Ember. Isso não significa que você deve trocar seu task runner atual por ela, mas caso ainda não tenha um de costume é interessante dar uma olhada neste.
 
 O Ember também implementa o "two-way data binding", porém de uma forma diferente do Angular. Não vou entrar muito em detalhes, já que o time de desenvolvimento anunciou que nas próximas versões da framework irá abandonar esta implementação. 
 
