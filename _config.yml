@@ -12,14 +12,10 @@ safe:        false
 baseurl:     /
 excerpt_separator: <!--more-->
 
- #gems: [jekyll-paginate]
- # This will require each of these gems automatically.
-
-
 # Build settings
 markdown: kramdown
-highlighter: pygments
-
+highlighter: rouge
+gems: [jekyll-paginate]
 paginate_path: 'blog/page:num'
 future:      true
 lsi:         false
@@ -29,7 +25,7 @@ paginate: 3
 github: [Repository metadata]
 source:      .
 destination: ./_site
-plugins:     ./_plugins
+plugins_dir: ./_plugins
 
 # Social links
 twitter_username: RafaelPazini
