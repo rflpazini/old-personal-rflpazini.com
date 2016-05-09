@@ -12,17 +12,19 @@ safe:        false
 baseurl:     /
 excerpt_separator: <!--more-->
 
+ #gems: [jekyll-paginate]
+ # This will require each of these gems automatically.
+
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments
 
 paginate_path: 'blog/page:num'
 future:      true
 lsi:         false
-pygments:    false
-permalink:   /:title/
-paginate: 5
+# permalink:   /:title/
+paginate: 3
 
 github: [Repository metadata]
 source:      .
