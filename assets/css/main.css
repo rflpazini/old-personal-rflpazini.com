@@ -78,6 +78,10 @@ p {
     /*line-height: 1.8em;*/
 }
 
+.post-content strong {
+  font-weight: 700;
+}
+
 .title {
     color: #a1a1a1;
     padding: 3px 0 20px 0;
@@ -109,7 +113,7 @@ p {
   list-style: none;
 }
 
-.post li:before {
+.post ul li:before {
   color: #b0120a;
   content: '\2022';
   display: block;
@@ -119,6 +123,10 @@ p {
   max-width: 0px;
   position: relative;
   top: -5px;
+}
+
+.post ol {
+  padding-left: 40px;
 }
 
 #master {

@@ -27,8 +27,9 @@
     ga('send', 'pageview');
     </script>
     <!-- Facebook -->
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} &mdash;{% endif %} {{ site.name }}" />
-    <meta property="og:site_name" content="Rafael Pazini" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} &mdash;{% endif %} {{ site.title }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:image" content="{{ site.image_url }}" />
     <meta property="og:url" content="{{ site.url }}{% if page.url != '/index.html' %}{{ page.url }}{% endif %}" />
     <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}blog{% endif %}" />
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
@@ -47,6 +48,6 @@
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body{%if page.class %} class="{{ page.class }}" {% endif %}>
