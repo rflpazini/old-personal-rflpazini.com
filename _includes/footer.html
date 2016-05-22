@@ -42,7 +42,11 @@ $('ul#posts').infinitescroll({
 <script src="{{ site.baseurl }}assets/js/fokus.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl}}assets/js/github-repos.js"></script>
 <script>
-  $(".github-repos").githubRepos();
+  $(document).ready(function(){
+    $(".github-repos").githubRepos();
+    $('a[target="_blank"]').addClass("external");
+  });
+
 </script>
 </body>
 

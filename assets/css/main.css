@@ -9,15 +9,33 @@ html {
 }
 
 a {
-    color: #999;
+    color: #b0120a;
     text-decoration: none;
-    border-bottom: 1px solid #b0120a;
     font-family: 'Roboto Slab', serif;
 }
 
+a.external::after {
+  font-family: FontAwesome;
+  content:"\f08e";
+  text-rendering: optimizeLegibility;
+  word-wrap: normal;
+  font-size: 17px;
+  margin-left: 5px;
+  box-sizing: inherit;
+}
+
 a:hover {
+  color: #c9160d;
+  text-decoration: none;
+}
+
+a:hover strong {
     color: #ccc;
     text-decoration: none;
+}
+
+a strong {
+  color: #999;
 }
 
 img {
@@ -129,7 +147,6 @@ p {
 
 #master ul {
     padding: 10px 35px;
-    /*text-align: center;*/
     display: block;
     list-style: none;
 }

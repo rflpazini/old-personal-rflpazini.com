@@ -13,7 +13,7 @@ Quando comecei a gostar da web, era utilizado o velho e ultrapassado DreamWeaver
 
 Mas chega de enrolação e vamos aos editores. São eles: 
 
-*	[SublimeText 3](http://www.sublimetext.com/3){:target="_blank"}
+*	[SublimeText 3](http://www.sublimetext.com/3){:target="_blank" :class="external"}
 *	[Atom](https://atom.io/){:target="_blank"}
 *	[Brackets](http://brackets.io/){:target="_blank"}
 *	[VIM](http://www.vim.org/){:target="_blank"}
@@ -29,18 +29,18 @@ Atualmente é o que uso praticamente todos os dias, pela facilidade e quantidade
 
 Gosto muito dos plugins criados pela comunidade, que geralmente facilitam e muito o trabalho, pois é criado por pessoas que já passaram pela dificuldade que o plugin soluciona, e como quase todos são open source, você mesmo pode dar um fork no projeto e colaborar com nova features ou correções de bugs.
 
-Eu uso vários plugins no meu Sublime, como por exemplo, [Emmet](http://emmet.io/) que facilita o desenvolvimento do html melhorando, e muito, a sua produtividade, [Polymer Snippets](https://github.com/robdodson/PolymerSnippets) que libera snippets de código para polymer e web components, [GitGutter](https://github.com/jisaacks/GitGutter) que mostra as diferenças entre o arquivo do git e o local, entre outros plugins.
+Eu uso vários plugins no meu Sublime, como por exemplo, [Emmet](http://emmet.io/){:target="_blank"} que facilita o desenvolvimento do html melhorando, e muito, a sua produtividade, [Polymer Snippets](https://github.com/robdodson/PolymerSnippets){:target="_blank"} que libera snippets de código para polymer e web components, [GitGutter](https://github.com/jisaacks/GitGutter){:target="_blank"} que mostra as diferenças entre o arquivo do git e o local, entre outros plugins.
 
-Caso queira saber mais detalhadamente do que o sublime é capaz, existe um [guia](http://www.sublimetext.com/docs/3/) feito pelos próprios desenvolvedores que explica detalhadamente algumas funções.
+Caso queira saber mais detalhadamente do que o sublime é capaz, existe um [guia](http://www.sublimetext.com/docs/3/){:target="_blank"} feito pelos próprios desenvolvedores que explica detalhadamente algumas funções.
 
 Atom
 ---
 
 ![Atom](/assets/img/posts/atom.jpg)
 
-É o mais novo desta lista de editores. O projeto base foi criado pelos desenvolvedores do [GitHub](http://github.com). O lema era criar um editor que fosse fácil, moderno e com as features que os desenvolvedores mais gostam. Eis que surge o Atom!
+É o mais novo desta lista de editores. O projeto base foi criado pelos desenvolvedores do [GitHub](http://github.com){:target="_blank"}. O lema era criar um editor que fosse fácil, moderno e com as features que os desenvolvedores mais gostam. Eis que surge o Atom!
 
-Por ele ser feito pelo GitHub, logo ele é open source. No início das primeiras versões que usei, estava disponível apenas para o OS X, mas isso já mudou e ele virou multi-plataforma com a ajuda do [Electron](http://electron.atom.io), um framework que transforma as 'Web Tech' (HTML, CSS e JavaScript) em uma aplicação desktop. 
+Por ele ser feito pelo GitHub, logo ele é open source. No início das primeiras versões que usei, estava disponível apenas para o OS X, mas isso já mudou e ele virou multi-plataforma com a ajuda do [Electron](http://electron.atom.io){:target="_blank"}, um framework que transforma as 'Web Tech' (HTML, CSS e JavaScript) em uma aplicação desktop. 
 
 Adorei o jeito que ele é modularizado e a cada dia que uso gosto cada vez mais deste editor, de cara me apaixonei pelo tema que por padrão é 'dark' e com umas fontes verdes que facilitam a minha leitura, mas temas são do gosto de cada um.
 
@@ -59,7 +59,7 @@ Brackets
 
 A Adobe, depois de perceber que seu bom e ultrapassado DreamWeaver havia ficado para trás, resolveu criar junto a comunidade um editor que fosse capaz de competir no novo mundo da web. Assim surge o Brackets.
 
-Foi o primeiro editor "moderno" que tive contato, logo de cara o que eu adorei foi a Live Preview. Você clica na botão e pode ver suas alterações em tempo real no navegador, sem ter que salvar o arquivo e nem recarregar a página. Além disso, quando você passa o mouse em cima do elemento no editor, ele destaca qual é o elemento que você está alterando - *uma ótima ajuda para quem está começando a entender sobre o desenvolvimento web e não tem tanta afinidade com o [DevTools](https://developer.chrome.com/devtools)*.
+Foi o primeiro editor "moderno" que tive contato, logo de cara o que eu adorei foi a Live Preview. Você clica na botão e pode ver suas alterações em tempo real no navegador, sem ter que salvar o arquivo e nem recarregar a página. Além disso, quando você passa o mouse em cima do elemento no editor, ele destaca qual é o elemento que você está alterando - *uma ótima ajuda para quem está começando a entender sobre o desenvolvimento web e não tem tanta afinidade com o [DevTools](https://developer.chrome.com/devtools){:target="_blank"}*.
 
 Outra função que se destaca nele é a possibilidade de acessar rapidamente as classes e id's para ser editado, sem ter que abrir o documento original.
 
@@ -76,7 +76,7 @@ Desta série que separei, é o único que não utilizei ainda, então prefiro n�
 
 Mas já adianto, todos que usam gostam, por ser uma interface leve, de fácil uso e principalmente por estar trabalhando diretamente com o terminal.
 
-Caso você queria saber um pouco mais sobre o VIM, existe a [página oficial](http://www.vim.org/index.php) que contém todo o conteúdo e inclusive um guia de como instalá-lo caso não esteja em uma máquina com suporte.
+Caso você queria saber um pouco mais sobre o VIM, existe a [página oficial](http://www.vim.org/index.php){:target="_blank"} que contém todo o conteúdo e inclusive um guia de como instalá-lo caso não esteja em uma máquina com suporte.
 
 Bom por enquanto creio que seja isto. Lembrando que os editores e o modo como são usados vai de cada pessoa, uma pessoa pode gostar de um, outra de outro e assim por diante, cada um se familiariza com um e todos acabamos felizes :)) 
 
