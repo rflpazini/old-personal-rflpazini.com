@@ -17,7 +17,7 @@ Nessa fase o que menos importa é o SO que você está utilizando, pois pode ser
 ### JDK ###
 
 
-Este é o primeiro passo quando estamos falando de Desenvolvimento Android. Como todos sabem, para desenvolver aplicativos nativamente o Android utiliza Java como linguagem padrão (agora com o NDK estão utilizando C++, mas não vamos nos aprofundar). O JDK *(Java Development Kit)* é a base para começar a se desenvolver aplicativos Java, nele temos as maquinas virtuais do java, os compiladores e todas as ferramentas necessárias para o desenvolvimento.
+Este é o primeiro passo quando estamos falando de Desenvolvimento Android. Como todos sabem, para desenvolver aplicativos nativamente o Android utiliza Java como linguagem padrão (agora com o NDK estão utilizando C++, mas não vamos nos aprofundar). O JDK *(Java Development Kit)* é a base para começar a desenvolver aplicativos Java, nele temos as máquinas virtuais do java, os compiladores e todas as ferramentas necessárias para o desenvolvimento.
 
 Então, caso você ainda não tenha o JDK instalado em seu computador, faça o download do mesmo que está disponível na [página da Oracle](http://www.oracle.com/technetwork/pt/java/javase/downloads/index.html){:target="_blank"}. Escolha o sistema operacional que você utiliza, faça o download **PS: Baixe somente o JDK**. Por fim instale o JDK seguindo os comandos que ele pede, é uma instalação simples.
 
@@ -27,7 +27,7 @@ Logo que o desenvolvimento android teve início sua principal ferramenta de dese
 
 Até um tempo atrás o Android Studio possuía alguns bugs, mas com o lançamento da versão 2.0 praticamente todos estes bugs foram extintos e o ambiente ficou muito mais estável desde a máquina virtual até a forma de compilação. E a tendência é ele ficar ainda melhor, já que a versão 2.2 está em desenvolvimento*(até o momento do post)*. 
 
-A primeira coisa que você deve fazer é o download do Android Studio no site oficial. Para os **usuários de Windows** recomendo que prestem atenção no download que irão efetuar, pois existem 3 tipos de download para esta plataforma - *(baixem a versão que já vem com o SDK, assim evitarão dores de cabeça com configuração de SDK futuramente)*. Agora é só instalar a IDE, **para usuários LINUX** dependendo da versão que estão rodando, é necessário a instalação das bibliotecas x86. Isto é comum no Ubuntu e no Debian x64, caso aconteça algum erro na instalação como por exemplo, o Android Studio não consegue encontrar o SDK ou algo parecido, é só instalar as bibliotecas digitando estes comandos no terminal:
+A primeira coisa que você deve fazer é o download do Android Studio no site oficial. Para os **usuários de Windows** recomendo que prestem atenção no download que irão efetuar, pois existem 3 tipos de download para esta plataforma - *(baixem a versão que já vem com o SDK, assim evitarão dores de cabeça com configuração de SDK futuramente)*. Agora é só instalar a IDE, **para usuários Linux** dependendo da versão que estão rodando, é necessário a instalação das bibliotecas x86. Isto é comum no Ubuntu e no Debian x64, caso aconteça algum erro na instalação como por exemplo, o Android Studio não consegue encontrar o SDK ou algo parecido, é só instalar as bibliotecas digitando estes comandos no terminal:
 
 ~~~~~~~~
 $ sudo apt-get install lib32z1 lib32ncurses5 lib32stdc++6

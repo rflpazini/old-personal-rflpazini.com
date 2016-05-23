@@ -149,17 +149,22 @@ p {
     background-size: 120px 120px;
 }
 
-#logo>h2 {
+#logo h2 {
   color: #fff;
+  font-weight: bold;
 }
 
-#master ul {
-    padding: 10px 35px;
+#logo p {
+  font-weight: 100;
+}
+
+#master ul.menu {
+    padding: 12px 35px 10px 35px;
     display: block;
     list-style: none;
 }
 
-#master ul li {
+#master ul.menu li {
     padding: 8px 0;
     font-size: 20px;
     color: #fff !important;
@@ -175,10 +180,38 @@ p {
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     color: #f69988;
+    cursor: pointer;
 }
 
 #master i.fa {
   margin-right: 35px;
+}
+.social-links a .svg path,
+.social-links a:hover .svg path {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.social-links a:hover .svg#facebook path {
+  fill: #4460a0;
+}
+
+.social-links a:hover .svg#twitter path {
+  fill: #00aaec;
+}
+
+.social-links a:hover .svg#instagram path {
+  fill: #ee157e;
+}
+
+.social-links a:hover .svg#github path {
+  fill: #000;
+}
+
+.social-links a:hover .svg#google path {
+  fill: #f93f2d;
 }
 
 .line {
@@ -273,21 +306,28 @@ blockquote p {
     border-color: transparent;
 }
 
-.social-links {
+.social-links,
+.social-links-footer {
     min-width: 50px;
     max-width: 300px;
-    height: 34px;
+    height: 24px;
     list-style: none;
     display: block;
 }
 
-.social-links li {
+.social-links li,
+.social-links-footer li {
     float: left;
-    margin: 0 8px;
+    margin: 0 6px;
     display: inline-block;
+
+}
+.social-links .svg {
+  width: 20px;
+  height: 20px;
 }
 
-.social-links li:nth-child(even):hover {
+/*.social-links li:nth-child(even):hover {
     -webkit-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
@@ -299,46 +339,20 @@ blockquote p {
     -moz-transform: rotate(5deg);
     -o-transform: rotate(5deg);
     transform: rotate(5deg);
+}*/
+
+.social-links .svg path{
+  fill: #fff;
 }
 
 .social-links li a {
     display: block;
     outline: none;
     margin: 0 4px;
-    text-indent: -9000px;
+    /*text-indent: -9000px;*/
     position: relative;
     border: none;
     overflow: hidden;
-}
-
-#social-twitter {
-    background: transparent url(../img/social-twitter.png) no-repeat;
-}
-
-#social-facebook {
-    background: transparent url(../img/social-facebook.png) no-repeat;
-}
-
-#social-gplus {
-    background: transparent url(../img/social-google.png) no-repeat;
-}
-
-#social-instagram {
-    background: transparent url(../img/social-instagram.png) no-repeat;
-}
-
-#social-git {
-    background: transparent url(../img/social-github.png) no-repeat;
-}
-
-.social-links li,
-#social-twitter,
-#social-facebook,
-#social-gplus,
-#social-instagram,
-#social-git {
-    width: 34px;
-    height: 34px;
 }
 
 /* Github Box */

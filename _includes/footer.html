@@ -1,23 +1,33 @@
-<ul class="social-links">
+<ul class="social-links-footer">
     {% if site.twitter_username %}
     <li>
-        <a id="social-twitter" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a>
+        <a class="social" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+          <img class="svg" src="{{ site.baseurl }}assets/img/Twitter-color.svg" alt="Twitter">
+        </a>
     </li>
     {% endif %} {% if site.facebook_username %}
     <li>
-        <a id="social-facebook" href="https://facebook.com/{{ site.facebook_username }}" target="_blank">Facebook</a>
+        <a class="social" href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
+          <img class="svg" src="{{ site.baseurl }}assets/img/Facebook-color.svg" alt="Twitter">
+        </a>
     </li>
     {% endif %} {% if site.plus_username %}
     <li>
-        <a id="social-gplus" href="https://plus.google.com/{{ site.plus_username }}" target="_blank">Google+</a>
+        <a class="social" href="https://plus.google.com/{{ site.plus_username }}" target="_blank">
+          <img class="svg" src="{{ site.baseurl }}assets/img/GooglePlus-color.svg" alt="Twitter">
+        </a>
     </li>
     {% endif %} {% if site.instagram_username %}
     <li>
-        <a id="social-instagram" href="https://instagram.com/{{ site.instagram_username }}" target="_blank">Instagram</a>
+        <a class="social" href="https://instagram.com/{{ site.instagram_username }}" target="_blank">
+          <img class="svg" src="{{ site.baseurl }}assets/img/Instagram-color.svg" alt="Twitter">
+        </a>
     </li>
     {% endif %} {% if site.github_username %}
     <li>
-        <a id="social-git" href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
+        <a class="social" href="https://github.com/{{ site.github_username }}" target="_blank">
+          <img class="svg" src="{{ site.baseurl }}assets/img/Github-black.svg" alt="Twitter">
+        </a>
     </li>
     {% endif %}
 </ul>
@@ -44,9 +54,31 @@ $('ul#posts').infinitescroll({
 <script>
   $(document).ready(function(){
     $(".github-repos").githubRepos();
-    $('a[target="_blank"]').addClass("external");
+    $('a[target="_blank"]').addClass("external")
+    $('a').each(function(index) {
+      if ($(this).hasClass("social")) {
+        $(this).removeClass("external");
+      }
+    });
   });
+  jQuery('img.svg').each(function(){
+          var $img = jQuery(this);
+          var imgID = $img.attr('id');
+          var imgClass = $img.attr('class');
+          var imgURL = $img.attr('src');
 
+          jQuery.get(imgURL, function(data) {
+              var $svg = jQuery(data).find('svg');
+              if(typeof imgID !== 'undefined') {
+                  $svg = $svg.attr('id', imgID);
+              }
+              if(typeof imgClass !== 'undefined') {
+                  $svg = $svg.attr('class', imgClass+' replaced-svg');
+              }
+              $svg = $svg.removeAttr('xmlns:a');
+              $img.replaceWith($svg);
+          }, 'xml');
+      });
 </script>
 </body>
 

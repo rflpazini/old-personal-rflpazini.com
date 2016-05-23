@@ -4,11 +4,22 @@
         min-width: 400px;
         max-width: 1050px;
     }
+    .social-links-footer {
+      display: none !important;
+    }
+
     .social-links {
-        top: 25px;
-        right: 15px;
         position: absolute;
-        
+        width: 280px;
+        left: 0;
+        right: 0;
+        bottom: 45px;
+        white-space:nowrap;
+        margin: 5px auto 0 auto;
+        padding-left: 8%;
+    }
+    .social-links li {
+      width: 12%;
     }
     #logo {
         padding: 260px 0 40px 0;
@@ -31,6 +42,12 @@
         display: inline-block !important;
         margin: 0px 10px;
     }
+    .social-links-footer {
+      display: block !important;
+    }
+    .social-links {
+      display: none !important;
+    }
     .blog-content {
         position: relative !important;
         width: 100%;
@@ -41,14 +58,21 @@
     #logo {
         padding: 60px 0;
     }
-    #logo>h2 {
+    #logo h2 {
       margin-top: 165px;
     }
-    .social-links {
+    .social-links-footer {
         position: relative;
         bottom: 25px !important;
         margin: 0 auto;
         width: 250px;
+      }
+    .social-links-footer .svg {
+      width: 24px;
+      height: 24px;
+    }
+    .social-links-footer .svg path{
+      fill: #b0120a;
     }
 }
 

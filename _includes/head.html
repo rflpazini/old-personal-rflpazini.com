@@ -29,7 +29,6 @@
     <!-- Facebook -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }} &mdash;{% endif %} {{ site.title }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
-    
     <meta property="og:url" content="{{ site.url }}{% if page.url != '/index.html' %}{{ page.url }}{% endif %}" />
     <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}blog{% endif %}" />
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
@@ -41,8 +40,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/main.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/responsive.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/main.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/responsive.min.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ site.baseurl }}assets/img/favicon.ico" type="image/x-icon" />
     <!-- Fonts -->
