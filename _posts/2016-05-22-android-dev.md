@@ -5,7 +5,7 @@ author: Rafael Pazini
 comments: true
 ---
 
-![Android Starter Pack](/assets/img/posts/android_dev.jpg)
+![Android Starter Pack](/assets/img/posts/android_dev_right.jpg)
 
 Praticamente há oito meses comecei a desenvolver para android nativo, já havia trabalhado antes com desenvolvimento android, mas usando o Adobe air e convenhamos que apesar de ser legal não oferece a mesma flexibilidade que o desenvolvimento nativo. Então resolvi mostrar o "caminho das pedras" neste post. <!--more-->
 
