@@ -42,7 +42,7 @@ A configuração de nosso ambiente de trabalho é uma coisa simples, apenas um p
 
 Iniciando os trabalhos
 ======================
-Agora que já temos nossa ambiente de desenvolvimento configurado vamos entender um pouco melhor o Android Studio, saber quais o que os painéis nos dizem e como podemos usá-los a nosso favor.
+Agora que já temos nosso ambiente de desenvolvimento configurado vamos entender um pouco melhor o Android Studio, saber o que os painéis nos dizem e como podemos usá-los a nosso favor.
 
 ### A interface do Android Studio ###
 ![Android Studio Project Screen](/assets/img/posts/android_interface.jpg)
@@ -51,13 +51,13 @@ Como  eu disse no começo deste post, a interface do AS é baseado no IntelliJ I
 
 1. A **barra de ferramentas** é onde temos controle sobre o projeto e acessamos as principais ferramentas da IDE, como a *run*, *debug*, *avd*, etc.
 2. A **barra de navegação** te mostra o caminho do arquivo em que está mexendo, é muito útil para se localizar dentro do sistema.
-3. **Janela de edição** é aqui que a mágica acontece, onde escrevemos os códigos e podemos editar os arquivos visuais.
-4. **Janelas de ferramentas** aqui podemos ficar ter acesso a tarefas específicas, ver o que está acontecendo com o dispositivo, ver o controle de versão. De muita atenção a estas áreas, pois todos os projetos sempre dependerão delas.
+3. **Janela de edição**, é aqui que a mágica acontece, onde escrevemos os códigos e podemos editar os arquivos visuais.
+4. **Janelas de ferramentas** aqui podemos ter acesso a tarefas específicas, ver o que está acontecendo com o dispositivo, ver o controle de versão. De muita atenção a estas áreas, pois todos os projetos sempre dependerão delas.
 5. A **barra de status** mostra todas as informações sobre o que está acontecendo com a IDE, mensagens de processos, avisos, erros e assim por diante.
 
 Conforme você for desenvolvendo seu app ou fazendo os testes para se acostumar com essa interface, vai reparar que estas áreas são muito úteis. Você também pode modificá-las para deixar a IDE com sua cara, dando mais espaço e melhorando seu fluxo de trabalho.
 
-Um dos jeitos que mais gosto de trabalhar é com o modo livre de distração ativado *(Distraction Free Mode)*, ele permite focar completamente na classe que estamos desenvolvendo visualizando apenas o código, sem os painéis na lateral. É bem útil quando se quer focar completamente basta colocar o fone de ouvido, ligar a música no máximo e deixar a "mágica" acontecer :D.
+Um dos jeitos que mais gosto de trabalhar é com o modo livre de distração ativado *(Distraction Free Mode)*, ele permite focar completamente na classe que estamos desenvolvendo visualizando apenas o código, sem os painéis na lateral. É bem útil quando se quer focar completamente, basta colocar o fone de ouvido, ligar a música no máximo e deixar a "mágica" acontecer :D.
 
 ![Android Studio Distraction Free Mode](/assets/img/posts/android_distraction-free.jpg)
 
@@ -105,7 +105,7 @@ O que realmente precisamos para começar a desenvolver uma aplicação quando ir
 
 ![Android Studio SDK Manager](/assets/img/posts/android_sdk-manager.jpg)
 
-Na figura acima temos a configuração do Android N(preview) no Android Studio, apenas estão instalados o SDK e a imagem do sistema para o celular/tablet. Como não será um projeto para a Android TV ou Android Wear, não é necessário instalar as imagens destes dispositivos. Isso nos ajuda a economizar algum tempo de download e instalação das imagens de sistema em nosso computador. A dica que deixo nesta parte é, veja qual será o alvo do seu app e baixe apenas a imagem do dispositivo que irá recebe-la.
+Na figura acima temos a configuração do Android N(preview) no Android Studio, apenas estão instalados o SDK e a imagem do sistema para o celular/tablet. Como não será um projeto para a Android TV ou Android Wear, não é necessário instalar as imagens destes dispositivos. Isso nos ajuda a economizar algum tempo de download e instalação das imagens de sistema em nosso computador. A dica que deixo nesta parte é, veja qual será o alvo do seu app e baixe apenas a imagem do dispositivo que irá recebe-lo.
 
 Bom estas são as dicas para quem está começando com o desenvolvimento Android. Creio que as principais dificuldades dos iniciantes foram tratadas aqui. Mas lógico que cada um é cada um, então se por um acaso você ainda tem alguma dúvida que não foi esclarecida neste post, por favor, fique a vontade para entrar em contado comigo em alguma rede social. Ficarei muito feliz em poder ajudar ;D !
 
