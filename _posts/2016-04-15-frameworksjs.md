@@ -2,6 +2,7 @@
 layout: post
 title: Frameworks JS, um bem necessário!
 author: Rafael Pazini
+comments: true
 ---
 
 ![Frameworks JS](/assets/img/posts/frameworks.jpg)

@@ -2,6 +2,7 @@
 layout: post
 title: Desenvolvimento Android, começando com o pé direito
 author: Rafael Pazini
+comments: true
 ---
 
 ![Android Starter Pack](/assets/img/posts/android_dev.jpg)

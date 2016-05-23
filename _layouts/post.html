@@ -8,6 +8,23 @@ layout: default
     </header>
     <article class="post-content">
         {{ content }}
-        <a rel="author" style="visibility: hidden;" class="author" href="https://plus.google.com/+RafaelPazini">Rafael Pazini</a>
+        <a rel="author" style="visibility: hidden;" class="author pull-right" href="https://plus.google.com/+RafaelPazini">Rafael Pazini</a>
+        {% if page.comments %}
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_config = function () {
+          this.page.url = "{{ site.url }}{{ page.url }}";
+          this.page.identifier = {{ page.url }};
+          };
+
+          (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = '//rflpazini.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        {% endif %}
     </article>
 </div>

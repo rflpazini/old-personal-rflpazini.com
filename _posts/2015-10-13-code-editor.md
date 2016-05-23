@@ -2,6 +2,7 @@
 layout: post
 title: Code Editor, eis a questão!
 author: Rafael Pazini
+comments: true
 
 ---
 

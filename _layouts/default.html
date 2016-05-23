@@ -1,4 +1,4 @@
-{% include head.html %} 
+{% include head.html %}
 
 {% include header.html %}
 
@@ -13,7 +13,7 @@
                 <h2 class="linktitle">
                         <a href="{{ post.link }}">{{ post.title }}</a>&nbsp;
                         <a href="{{ post.url }}" class="infin">&infin;</a>
-                    </h2> 
+                    </h2>
                 {% elsif post.quote %}
                 <p class="date articledate center">{{ post.date | date:"%d/%m/%Y" }}</p>
                 {% else %}
@@ -24,8 +24,8 @@
                 {% endif %}
 
                 <article class="post-content">
-                    {% if post.excerpt %} 
-                        {{ post.excerpt | markdownify }} 
+                    {% if post.excerpt %}
+                        {{ post.excerpt | markdownify }}
                     {% unless post.nomore or post.quote %}
                     <p><a href="{{ post.url }}">
                         {% if post.language == "en" %}
@@ -36,13 +36,13 @@
                     </p>
                     {% endunless %}
 
-                    {% else %} 
+                    {% else %}
                         {{ post.content }}
                     {% endif %}
                 </article>
                 <div class="line"></div>
             </li>
-            {% endunless %} 
+            {% endunless %}
             {% endfor %}
         </ul>
     </div>
