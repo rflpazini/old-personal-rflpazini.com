@@ -92,7 +92,6 @@ apply plugin: 'com.android.application'
     dependencies {
         compile 'com.google.android.gms:play-services:9.0.0'
     }
-    
 ~~~
 
 Não precisamos nos aprofundar muito neste assunto, basicamente temos que entender para o que ele serve, como ele nos ajuda e como utilizá-lo. Caso queira ler mais sobre o assunto, no [site oficial](http://gradle.org/getting-started-android/){:target="_blank"} existem alguns materiais para quem está começando, não custa dar uma olhada.
@@ -108,8 +107,4 @@ O que realmente precisamos para começar a desenvolver uma aplicação quando ir
 
 Na figura acima temos a configuração do Android N(preview) no Android Studio, apenas estão instalados o SDK e a imagem do sistema para o celular/tablet. Como não será um projeto para a Android TV ou Android Wear, não é necessário instalar as imagens destes dispositivos. Isso nos ajuda a economizar algum tempo de download e instalação das imagens de sistema em nosso computador. A dica que deixo nesta parte é, veja qual será o alvo do seu app e baixe apenas a imagem do dispositivo que irá recebe-lo.
 
-Bom estas são as dicas para quem está começando com o desenvolvimento Android. Creio que as principais dificuldades dos iniciantes foram tratadas aqui. Mas lógico que cada um é cada um, então se por um acaso você ainda tem alguma dúvida que não foi esclarecida neste post, por favor, fique a vontade para entrar em contado comigo em alguma rede social. Ficarei muito feliz em poder ajudar ;D !
-
-
-
-
+Bom estas são as dicas para quem está começando com o desenvolvimento Android. Creio que as principais dificuldades dos iniciantes foram tratadas aqui. Mas lógico que cada um é cada um, então se por um acaso você ainda tem alguma dúvida que não foi esclarecida neste post, por favor, fique a vontade para deixar um comentário ou entrar em contado comigo em alguma rede social. Ficarei muito feliz em poder ajudar ;D !
