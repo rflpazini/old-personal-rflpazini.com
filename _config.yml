@@ -3,12 +3,12 @@ title: Rafael Pazini
 email: rflpazini@gmail.com
 description: This is my project for my personal site/blog to talk about front-end and back-end development.
 commentlinks: true
-url: https://rflpazini.com
+baseurl: https://rflpazini.com
 domain: rflpazini.com
 image_url: https://dl.dropboxusercontent.com/u/104095732/rflpazini.jpg
 google: UA-65133136-1
 
-safe:        false
+safe:        true
 baseurl:     /
 excerpt_separator: <!--more-->
 
