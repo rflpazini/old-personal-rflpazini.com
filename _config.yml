@@ -5,7 +5,7 @@ description: This is my project for my personal site/blog to talk about front-en
 commentlinks: true
 url: https://rflpazini.com
 enforce_ssl: rflpazini.com
-domain: rflpazini.com
+domain: https://rflpazini.com
 image_url: https://dl.dropboxusercontent.com/u/104095732/rflpazini.jpg
 google: UA-65133136-1
 
