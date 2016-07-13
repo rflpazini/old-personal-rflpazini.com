@@ -30,7 +30,7 @@ Até um tempo atrás o Android Studio possuía alguns bugs, mas com o lançament
 
 A primeira coisa que você deve fazer é o download do Android Studio no site oficial. Para os **usuários de Windows** recomendo que prestem atenção no download que irão efetuar, pois existem 3 tipos de download para esta plataforma - *(baixem a versão que já vem com o SDK, assim evitarão dores de cabeça com configuração de SDK futuramente)*. Agora é só instalar a IDE, **para usuários Linux** dependendo da versão que estão rodando, é necessário a instalação das bibliotecas x86. Isto é comum no Ubuntu e no Debian x64, caso aconteça algum erro na instalação como por exemplo, o Android Studio não consegue encontrar o SDK ou algo parecido, é só instalar as bibliotecas digitando estes comandos no terminal:
 
-~~~~~~~~
+~~~nohighlight
 $ sudo apt-get install lib32z1 lib32ncurses5 lib32stdc++6
 ~~~~~~~~
 
@@ -85,7 +85,7 @@ O [Gradle](http://gradle.org){:target="_blank"} é uma ferramenta de build muito
 
 Você sempre utilizará o arquivo `build.gradle` para adicionar à compilação os arquivos que deseja, por exemplo, em uma aplicação que terá o [Google Play Services](https://developers.google.com/android/guides/overview#the_google_play_services_client_library){:target="_blank"} para seder algum serviço você será necessário adicionar nas dependências do arquivo build a seguinte linha de comando.
 
-~~~ gradle
+~~~ java
 apply plugin: 'com.android.application'
     ...
 

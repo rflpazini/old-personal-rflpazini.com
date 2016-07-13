@@ -35,10 +35,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src='{{ site.baseurl }}assets/js/jquery.jscroll.min.js'></script>
 <script>
-    $('.blog-content').jscroll({ 
-      contentSelector: "ul#posts li.post", 
-      nextSelector: 'a.next' 
-    });
+    // $('.blog-content').jscroll({ 
+    //   contentSelector: "ul#posts li.post", 
+    //   nextSelector: 'a.next' 
+    // });
 </script>
 <!-- JS -->
 <script src="{{ site.baseurl }}assets/js/jquery-ui-1.10.4.min.js"></script>
@@ -74,6 +74,8 @@ jQuery('img.svg').each(function() {
         $img.replaceWith($svg);
     }, 'xml');
 });
+
+hljs.initHighlightingOnLoad();
 </script>
 </body>
 
