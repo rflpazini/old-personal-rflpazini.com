@@ -198,5 +198,9 @@ class Calculadora {
 
 Sendo assim criamos uma nova implementação e garantimos que a mesma está funcionando com seu devido teste. Se rodarmos novamente os testes, todos estarão no estado verde.
 
-Como podemos perceber, a implementação de testes é algo que não é complicado e nos ajuda muito durante o desenvolvimento das aplicações. Caso você queria ver o código final da implementação de exemplo, ele estará disponível no [github](https://github.com/rflpazini/jstesting){:target="_blank"}. Espero que possa ter te ajudar um pouco com esta explicação, e qualquer dúvida é só deixar um comentário.
+![Testing JS](/assets/img/posts/jstesting2.jpg)
+
+Como podemos perceber a implementação de testes é algo que não é complicado e nos ajuda muito durante o desenvolvimento das aplicações, principalmente quando seguimos o ciclo de testes. Caso você queria ver o código final da implementação de exemplo, ele estará disponível no [github](https://github.com/rflpazini/jstesting){:target="_blank"}. 
+
+Espero que possa ter te ajudar um pouco com esta explicação, e qualquer dúvida é só deixar um comentário.
 
