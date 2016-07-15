@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Testando JavaScript
+title: Testes com JavaScript
 author: Rafael Pazini
 comments: true
 ---
@@ -85,7 +85,7 @@ Primeiro escrevemos nosso teste, vamos continuar no exemplo do método soma. Ele
 
 Então para escrever este teste vamos pensar que o seguinte - Estamos desenvolvendo uma Calculadora, onde teremos uma classe chamada `Calculadora.js` e que haverá um método que soma dois números. Portanto...
 
-* O método `soma` deverá aceitar apenas números;
+* O método `soma` deverá somar números;
 * Conseguir somar números flutuantes *(0.3 + 0.4)*
 * Retornar o valor da soma dos números;
 
@@ -143,15 +143,60 @@ class Calculadora {
 }
 ~~~
 
-No código fiz uma comparação para saber se o número que estamos procurando era um número quebrado ou não. Se ele for um número flutuante, converto ele para float e limito no número de casas decimais para 2, que é o que uma calculadora normal faz. Sendo assim, nossos dois testes ficam verdes. O que garante que nosso código está atendendo as expectativas.
+No código existe uma comparação para saber se o número que estamos procurando era um número quebrado ou não. Se ele for um número flutuante, o mesmo é convertido para float e também é limitado o número de casas decimais para 2, que é o que uma calculadora normal faz. Sendo assim, nossos dois testes ficam verdes. O que garante que nosso código está atendendo as expectativas.
 
 ### Refactor ###
 
-A parte de refatorar o código é uma das mais complicadas, pois sem querer podemos quebrar alguma coisa que já funciona. Mas como temos nossos testes implementados, eles irão assegurar de que nada será quebrado quando adicionarmos novas *features* ou formos corrigir algo no código, caso elas quebrem os testes irão falhar e então saberemos o que quebrou.
+A parte de refatorar o código é uma das mais complexas, pois sem querer podemos quebrar alguma coisa que já funciona. Mas como temos nossos testes implementados, eles irão assegurar de que nada será quebrado quando adicionarmos novas *features* ou formos corrigir algo no código, caso elas quebrem os testes irão falhar e então saberemos o que quebrou.
 
-No começo da criação de nossa classe, ela deveria aceitar apenas números. No momento se passarmos strings como por exemplo`"2"+"3"` ele ainda irá aceitar e concatenar as strings, retornando `23` como valor. 
+No momento se passarmos duas Strings como parâmetros `"2"+"3"` ele ainda irá aceitar e concatenar as Strings, retornando `23` como resultado da soma. E claro que está incorreto. 
 
-Então para que isto não seja permitido, basta adicionarmos uma feature que exibe um erro quando tentamos usar strings no método soma.
+Então para que isto não seja permitido, basta adicionarmos uma feature que retorna um erro quando tentamos usar Strings como parâmetros do método soma. Desta forma adicionaremos um teste que simula a entrada de uma String e que verifica se o erro está sendo retornado, nosso teste será mais ou menos assim
+
+~~~ js
+describe('Calculadora', function() {
+	
+   ...
+    
+    // Teste responsável pela verificação do erro quando 
+    // existe Strings como parâmetros
+    it('deve gerar um ERRO ao receber uma String como parâmetro', function() {
+    	expect(function() {
+    		calculadora.soma(2, 'teste')
+    	}).toThrowError(Error);
+    });
+});
+~~~
+
+E agora que temos um teste para simular a entrada de Strings, é hora de implementar nosso código com a comparação que verificará se os números são realmente números. Para isso utilizaremos a função `typeof` para verificar o tipo da variável que iremos calcular.
 
 
+~~~ js
+class Calculadora {
+    soma(a, b) {
+        let result;
+
+        // Verifica se os tipos dos arguentos que recebemos
+        // são do tipo 'number'. Caso não forem, iremos retornar um erro
+        if (typeof a != 'number' || typeof b != 'number') {
+            throw new Error("Os valores devem ser apenas números");
+        }
+
+        result = a + b;
+
+        // Verifica se o resultado da soma convertido em inteiro não é igual ao resultado
+        // se isso for verdade, convertemos o número para float e limitamos o mesmo
+        // para apenas duas casas depois da vírgula
+        if (parseInt(result) != result) {
+            result = parseFloat(result.toFixed(2));
+        }
+
+        return result;
+    }
+}
+~~~
+
+Sendo assim criamos uma nova implementação e garantimos que a mesma está funcionando com seu devido teste. Se rodarmos novamente os testes, todos estarão no estado verde.
+
+Como podemos perceber, a implementação de testes é algo que não é complicado e nos ajuda muito durante o desenvolvimento das aplicações. Caso você queria ver o código final da implementação de exemplo, ele estará disponível no [github](https://github.com/rflpazini/jstesting){:target="_blank"}. Espero que possa ter te ajudar um pouco com esta explicação, e qualquer dúvida é só deixar um comentário.
 
