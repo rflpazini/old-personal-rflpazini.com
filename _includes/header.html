@@ -1,61 +1,64 @@
 <!-- #master -->
 <header id="master">
-
     <a href="{{ site.baseurl }}">
         <div id="logo">
-          <h2 class="text-center">{{ site.title }}</h2>
-          <!-- <p class="text-center">SOFTWARE DEVELOPER</p> -->
+            <h2 class="text-center">{{ site.title }}</h2>
+            <!-- <p class="text-center">SOFTWARE DEVELOPER</p> -->
         </div>
     </a>
-        <ul class="social-links">
-            {% if site.twitter_username %}
-            <li class="center">
-                <a class="social" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
-                  <img class="svg" id="twitter" src="{{ site.baseurl }}assets/img/Twitter-color.svg" alt="Twitter">
-                </a>
-            </li>
-            {% endif %} {% if site.facebook_username %}
-            <li>
-                <a class="social" href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
-                  <img class="svg" id="facebook" src="{{ site.baseurl }}assets/img/Facebook-color.svg" alt="Twitter">
-                </a>
-            </li>
-            {% endif %} {% if site.plus_username %}
-            <li>
-                <a class="social" href="https://plus.google.com/{{ site.plus_username }}" target="_blank">
-                  <img class="svg" id="google" src="{{ site.baseurl }}assets/img/GooglePlus-color.svg" alt="Twitter">
-                </a>
-            </li>
-            {% endif %} {% if site.instagram_username %}
-            <li>
-                <a class="social" href="https://instagram.com/{{ site.instagram_username }}" target="_blank">
-                  <img class="svg" id="instagram" src="{{ site.baseurl }}assets/img/Instagram-color.svg" alt="Twitter">
-                </a>
-            </li>
-            {% endif %} {% if site.github_username %}
-            <li>
-                <a class="social" href="https://github.com/{{ site.github_username }}" target="_blank">
-                  <img class="svg" id="github" src="{{ site.baseurl }}assets/img/Github-black.svg" alt="Twitter">
-                </a>
-            </li>
-            {% endif %}
-        </ul>
-
+    <ul class="social-links">
+        {% if site.twitter_username %}
+        <li class="center">
+            <a class="social" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+                <img class="svg" id="twitter" src="{{ site.baseurl }}assets/img/Twitter-color.svg" alt="Twitter">
+            </a>
+        </li>
+        {% endif %} {% if site.facebook_username %}
+        <li>
+            <a class="social" href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
+                <img class="svg" id="facebook" src="{{ site.baseurl }}assets/img/Facebook-color.svg" alt="Twitter">
+            </a>
+        </li>
+        {% endif %} {% if site.plus_username %}
+        <li>
+            <a class="social" href="https://plus.google.com/{{ site.plus_username }}" target="_blank">
+                <img class="svg" id="google" src="{{ site.baseurl }}assets/img/GooglePlus-color.svg" alt="Twitter">
+            </a>
+        </li>
+        {% endif %} {% if site.instagram_username %}
+        <li>
+            <a class="social" href="https://instagram.com/{{ site.instagram_username }}" target="_blank">
+                <img class="svg" id="instagram" src="{{ site.baseurl }}assets/img/Instagram-color.svg" alt="Twitter">
+            </a>
+        </li>
+        {% endif %} {% if site.github_username %}
+        <li>
+            <a class="social" href="https://github.com/{{ site.github_username }}" target="_blank">
+                <img class="svg" id="github" src="{{ site.baseurl }}assets/img/Github-black.svg" alt="Twitter">
+            </a>
+        </li>
+        {% endif %}
+    </ul>
     <ul class="menu">
         <li>
-          <a href="{{ site.baseurl }}blog">
-            <i class="fa fa-rss"></i>Blog
-          </a>
+            <a href="{{ site.baseurl }}blog">
+                <i class="fa fa-rss"></i>Blog
+            </a>
         </li>
         <li>
-          <a href="{{ site.baseurl }}projects">
-            <i class="fa fa-codepen"></i>Projects/Labs
-          </a>
+            <a href="{{ site.baseurl }}projects">
+                <i class="fa fa-codepen"></i>Projects/Labs
+            </a>
         </li>
         <li>
-          <a href="{{ site.baseurl }}resume.pdf">
-            <i class="fa fa-file-text-o"></i>My resume
-          </a>
+            <a href="{{ site.baseurl }}talks">
+                <i class="fa fa-comments-o"></i>Talks
+            </a>
+        </li>
+        <li>
+            <a href="{{ site.baseurl }}resume.pdf">
+                <i class="fa fa-file-text-o"></i>My resume
+            </a>
         </li>
     </ul>
     <!-- <a href="https://github.com/rflpazini/rflpazini.github.io" target="_blank">

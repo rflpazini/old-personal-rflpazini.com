@@ -63,9 +63,10 @@
     }
     .social-links-footer {
         position: relative;
-        bottom: 25px !important;
+        bottom: 15px !important;
         margin: 0 auto;
         width: 250px;
+        left: 35px
       }
     .social-links-footer .svg {
       width: 24px;
