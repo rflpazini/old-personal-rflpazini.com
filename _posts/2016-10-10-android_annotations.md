@@ -8,15 +8,17 @@ comments: true
 ![Android in the rain](/assets/img/posts/android_rain.jpg)
  
 
-Quando começamos a desenvolver para Android, logo de cara notamos que sempre teremos interações entre os arquivos XML e as classes Java, porque se não fosse assim não seria possível pegar as informações da UI ou atualizar os seus dados. E para isso temos que isntanciar os objetos, o que gera várias linhas de código, mas temos o **Android Annotations** para facilitar isso. <!--more-->
+Quando começamos a desenvolver para Android, logo de cara notamos que sempre teremos interações entre os arquivos XML e as classes Java, porque se não fosse assim não seria possível pegar as informações da UI ou atualizar os seus dados. E para isso temos que instanciar os objetos, o que gera várias linhas de código *boilerplate*, mas temos o **Android Annotations** para facilitar isso. <!--more-->
 
-Todo mundo está acostumado com os *annotations* em Java, que é comum para alguns códigos como por exemplo em Servlets, Web services e assim por diante. Caso você não esteja se recordando do que é, o mais comum e que certamente você já usou é o `@Override`.
+Todo mundo está acostumado com os *annotations* em Java, que é comum para alguns códigos como por exemplo em Servlets, Web services e assim por diante. Caso você não esteja se recordando do que é, o mais comum e que certamente você já usou é o `@Override`. 
+
+Com o AA podemos facilitar algumas ações que levariam algum tempo para serem codificadas, como por exemplo declarar 15 elementos em uma view. Ele como o próprio slogam do repositório diz, ele permite que nos concentremos no que realmente importa, simplificando o código e facilitando a manutenção. Vamos ver como ele funciona.
 
 
-Limpando o código
-=================
+Limpando o código e vendo o funcionamento
+=========================================
 
-Com o Android Annotations podemos além de facilitar o desenvolvimento, conseguir dar uma limpada no código também e esta é uma das coisas mais interessantes no annotations. Nas aplicações Android sempre começamos instanciando os objetos dentro do método `onCreate`
+Com o Android Annotations podemos além de facilitar o desenvolvimento, conseguir dar uma limpada no código também e esta é uma das coisas mais interessantes no annotations. Como já foi dito, nas aplicações Android sempre começamos instanciando os objetos dentro do método `onCreate`
 
 ~~~ java
 public class MainActivity extends AppCompatActivity {
@@ -79,7 +81,9 @@ public class MainActivity extends AppCompatActivity {
 }
 ~~~
 
-Pronto declaramos as variáveis e para utilizá-las basta setar os valores como já é feito atualmente, por exemplo, no TextView chamar a função `setText`. O código fica mais limpo e caso você não queira, não precisa nem de utilizar o método `onCreate`, neste exemplo eu utilizei apenas para declarar o content view e chamar o método `setValuesOfPlayers`. O content view pode ser declarado diretamente no `@EActivity`, que ficaria desta forma
+Pronto declaramos as variáveis e para utilizá-las basta setar os valores como já é feito atualmente, por exemplo em um TextView chamar a função `setText`. O código fica mais limpo e caso você não queira, não precisa nem de utilizar o método `onCreate`, neste exemplo eu utilizei apenas para declarar o content view e chamar o método `setValuesOfPlayers`. 
+
+Caso você prefira o content view pode ser declarado diretamente no `@EActivity`, que ficaria desta forma
 
 ~~~ java
 @EActivity(R.layout.activity_main) //declara o content view
@@ -92,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
 
 Assim deixamos o código até mais legível e com menos *boilerplate*, facilitando a manutenção deste no futuro.
 
+>Menos é mais... Não importa onde isso seja dito
+
 Implementação
 =============
 
@@ -99,7 +105,7 @@ Você já deve estar doido se perguntando como implementar isto em seu projeto, 
 
 O AA não é nativo no android, por isso precisamos adicionar algumas configurações em nosso build para utilizarmos sem erros de compilação.
 
-Primeiro você deve dicionar a dependencia do `android-apt` ao build do projeto.
+Primeiro você deve adicionar a dependencia do `android-apt` ao build do projeto.
 
 ~~~ groovy
 dependencies {
@@ -126,7 +132,7 @@ dependencies {
 }
 ~~~
 
-Com a variável `AAVersion` fica mais fácil de controlarmos quando houver uma nova versão já que utilizamos este número em mais de uma dependencia. Assim quando for necessário trocar de versão será necessário apenas uma alteração em nosso build.
+A variável `AAVersion` deixa mais fácil de controlarmos quando houver uma atualização já que utilizamos este número em mais de uma dependencia. Assim quando for necessário trocar de versão basta apenas alterar um lugar em nosso build.
 
 Depois que configuramos nosso build e sincronizamos com o projeto, todas as funções do AA estão disponíveis para uso. Agora é só alegria :D.
 
