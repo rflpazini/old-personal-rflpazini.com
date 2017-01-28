@@ -74,7 +74,7 @@ Quando vamos começar a implementar testes, é interessante saber que existem pa
 
 * Red *(vermelho)* - o teste que escrevemos obrigatoriamente irá falhar;
 * Green *(verde)* - o teste é aprovado;
-* Refactor *(relatora)* - podemos refatorar/limpar o código sem medo.
+* Refactor *(refatore)* - podemos refatorar/limpar o código sem medo.
 
 
 
@@ -202,5 +202,5 @@ Sendo assim criamos uma nova implementação e garantimos que a mesma está func
 
 Como podemos perceber a implementação de testes é algo que não é complicado e nos ajuda muito durante o desenvolvimento das aplicações, principalmente quando seguimos o ciclo de testes. Caso você queria ver o código final da implementação de exemplo, ele estará disponível no [github](https://github.com/rflpazini/jstesting){:target="_blank"}. 
 
-Espero que possa ter te ajudar um pouco com esta explicação, e qualquer dúvida é só deixar um comentário.
+Espero que possa ter ajudado um pouco com esta explicação, e qualquer dúvida é só deixar um comentário.
 
