@@ -7,7 +7,7 @@ comments: true
 
 ![Testing JS](/assets/img/posts/jstesting.jpg)
 
-Antes de começarmos a falar sobre os testes, irei fazer uma pergunta que certamente você já ouviu muitas vezes: **Você implementa testes?** 
+Antes de começarmos a falar sobre os testes, irei fazer uma pergunta que certamente você já ouviu muitas vezes: **Você implementa testes?**
 
 Caso a resposta seja não, vamos tentar consertá-la e torná-la em um sim. <!--more--> Quando falamos de testes e ainda não utilizamos ou apenas só ouvimos falar sobre eles, ficamos com várias dúvidas de como implementar, o que usar, o que não usar, então vamos tentar clarear um pouco estes pensamentos e fazer de uma forma simples e eficiente.
 
@@ -15,7 +15,7 @@ O que são testes
 ================
 
 
-Testes são um conjunto de tarefas que são executadas para verificar se um método está fazendo o que ele deveria fazer. Ou seja, se ele está retornando os valores que deveria retornar, se está adicionando objetos onde deveria e assim por diante. 
+Testes são um conjunto de tarefas que são executadas para verificar se um método está fazendo o que ele deveria fazer. Ou seja, se ele está retornando os valores que deveria retornar, se está adicionando objetos onde deveria e assim por diante.
 
 Escrever testes também ajuda a criar códigos mais eficientes, desta forma conseguimos assegurar que mesmo quando forem feitas novas implementações não será quebrado algo que já funciona.
 
@@ -68,9 +68,9 @@ Como todo bom desenvolvedor que está aprendendo sobre alguma tecnologia, indico
 
 >Teste de software é o processo de executar o software de uma maneira controlada com o objetivo de avaliar se o mesmo se comporta conforme o especificado.
 
-### Clico de testes *Red, green, refactor*###
+### Ciclo de testes *Red, green, refactor*###
 
-Quando vamos começar a implementar testes, é interessante saber que existem padrões de se fazer isto. É o que este ciclo irá no mostrar. Ele basicamente é separado em três etapas: 
+Quando vamos começar a implementar testes, é interessante saber que existem padrões de se fazer isto. É o que este ciclo irá no mostrar. Ele basicamente é separado em três etapas:
 
 * Red *(vermelho)* - o teste que escrevemos obrigatoriamente irá falhar;
 * Green *(verde)* - o teste é aprovado;
@@ -97,7 +97,7 @@ describe('Calculadora', function() {
     var calculadora,
     	a,
     	b;
-    
+
     //Inicia as variáveis antes de executar qualquer rotina de teste
     beforeEach(function() {
     	calculadora = new Calculadora();
@@ -113,7 +113,7 @@ describe('Calculadora', function() {
     //Teste de soma de números flutuantes
     it('deve somos DOIS números FLUTUANTES', function() {
     	expect(calculadora.soma(0.1, 0.2)).toEqual(0.3);
-    }) 
+    })
 });
 ~~~
 
@@ -149,16 +149,16 @@ No código existe uma comparação para saber se o número que estamos procurand
 
 A parte de refatorar o código é uma das mais complexas, pois sem querer podemos quebrar alguma coisa que já funciona. Mas como temos nossos testes implementados, eles irão assegurar de que nada será quebrado quando adicionarmos novas *features* ou formos corrigir algo no código, caso elas quebrem os testes irão falhar e então saberemos o que quebrou.
 
-No momento se passarmos duas Strings como parâmetros `"2"+"3"` ele ainda irá aceitar e concatenar as Strings, retornando `23` como resultado da soma. E claro que está incorreto. 
+No momento se passarmos duas Strings como parâmetros `"2"+"3"` ele ainda irá aceitar e concatenar as Strings, retornando `23` como resultado da soma. E claro que está incorreto.
 
 Então para que isto não seja permitido, basta adicionarmos uma feature que retorna um erro quando tentamos usar Strings como parâmetros do método soma. Desta forma adicionaremos um teste que simula a entrada de uma String e que verifica se o erro está sendo retornado, nosso teste será mais ou menos assim
 
 ~~~ js
 describe('Calculadora', function() {
-	
+
    ...
-    
-    // Teste responsável pela verificação do erro quando 
+
+    // Teste responsável pela verificação do erro quando
     // existe Strings como parâmetros
     it('deve gerar um ERRO ao receber uma String como parâmetro', function() {
     	expect(function() {
@@ -200,7 +200,6 @@ Sendo assim criamos uma nova implementação e garantimos que a mesma está func
 
 ![Testing JS](/assets/img/posts/jstesting2.jpg)
 
-Como podemos perceber a implementação de testes é algo que não é complicado e nos ajuda muito durante o desenvolvimento das aplicações, principalmente quando seguimos o ciclo de testes. Caso você queria ver o código final da implementação de exemplo, ele estará disponível no [github](https://github.com/rflpazini/jstesting){:target="_blank"}. 
+Como podemos perceber a implementação de testes é algo que não é complicado e nos ajuda muito durante o desenvolvimento das aplicações, principalmente quando seguimos o ciclo de testes. Caso você queria ver o código final da implementação de exemplo, ele estará disponível no [github](https://github.com/rflpazini/jstesting){:target="_blank"}.
 
 Espero que possa ter ajudado um pouco com esta explicação, e qualquer dúvida é só deixar um comentário.
-

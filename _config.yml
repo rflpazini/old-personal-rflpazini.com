@@ -16,7 +16,7 @@ excerpt_separator: <!--more-->
 # Build settings
 markdown: kramdown
 highlighter: rouge
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, ]
 paginate_path: 'blog/page:num'
 future:      true
 lsi:         false
@@ -27,6 +27,12 @@ github: [Repository metadata]
 source:      .
 destination: ./_site
 plugins_dir: ./_plugins
+jekyll-crosspost_to_medium:
+  enabled: true
+  cache: .jekyll-crosspost_to_medium
+  status: draft
+  license: all-rights-reserved
+  backdate: true
 
 # Social links
 twitter_username: RafaelPazini
@@ -34,3 +40,4 @@ github_username:  rflpazini
 instagram_username: rafaelpazini
 facebook_username: RafaPazini
 plus_username: +RafaelPazini
+linkedin_username: rafaelpazini

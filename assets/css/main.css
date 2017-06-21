@@ -148,7 +148,7 @@ li.post,
 }
 
 #logo {
-    background: url(../img/rafael.png) center no-repeat;
+    background: url(../img/rafaelcopy.png) center no-repeat;
     background-size: 120px 120px;
 }
 
@@ -215,8 +215,8 @@ li.post,
     fill: #000;
 }
 
-.social-links a:hover .svg#google path {
-    fill: #f93f2d;
+.social-links a:hover .svg#linkedin path {
+    fill: #007BB5;
 }
 
 .line {
