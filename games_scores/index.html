@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Testing scores</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <p>Brand</p>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <header class="scores-header text-center">
+      <div class="col-md-6">
+        <h1 id="home_score">0</h1>
+        <p class="lead" id="home">Santos</p>
+      </div>
+      <div class="col-md-6">
+        <h1 id="away_score">0</h1>
+        <p class="lead" id="visitante">Sport</p>
+      </div>
+
+    </header>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    const getScores = () => $.ajax({
+      url: "https://globosatplay.globo.com/premierefc/ao-vivo/v2/scores/",
+      success: (result) => {
+        console.log(result);
+        for (var i = 0; i < result.length; i++) {
+          getMatch(result[i]);
+        }
+      }
+    });
+    const reqInterval = setInterval(() => {
+      getScores()
+    }, 1000);
+
+    const getMatch = (match) => {
+      let matchId = matchId.match_id;
+
+      if (matchId == 211421) {
+        $('#home_score').text(match.home);
+        $('away_score').text(match.away);
+      }
+    };
+  </script>
+</body>
+
+</html>
