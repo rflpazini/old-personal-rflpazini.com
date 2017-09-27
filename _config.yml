@@ -16,7 +16,7 @@ excerpt_separator: <!--more-->
 # Build settings
 markdown: kramdown
 highlighter: rouge
-gems: [jekyll-paginate, ]
+gems: [jekyll-paginate]
 paginate_path: 'blog/page:num'
 future:      true
 lsi:         false
