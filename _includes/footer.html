@@ -8,32 +8,32 @@
     {% endif %} {% if site.facebook_username %}
     <li>
         <a class="social" href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
-            <img class="svg" src="{{ site.baseurl }}assets/img/Facebook-color.svg" alt="Twitter">
+            <img class="svg" src="{{ site.url }}/assets/img/Facebook-color.svg" alt="Twitter">
         </a>
     </li>
     {% endif %} {% if site.plus_username %}
     <li>
         <a class="social" href="https://plus.google.com/{{ site.plus_username }}" target="_blank">
-            <img class="svg" src="{{ site.baseurl }}assets/img/GooglePlus-color.svg" alt="Twitter">
+            <img class="svg" src="{{ site.url }}/assets/img/GooglePlus-color.svg" alt="Twitter">
         </a>
     </li>
     {% endif %} {% if site.instagram_username %}
     <li>
         <a class="social" href="https://instagram.com/{{ site.instagram_username }}" target="_blank">
-            <img class="svg" src="{{ site.baseurl }}assets/img/Instagram-color.svg" alt="Twitter">
+            <img class="svg" src="{{ site.url }}/assets/img/Instagram-color.svg" alt="Twitter">
         </a>
     </li>
     {% endif %} {% if site.github_username %}
     <li>
         <a class="social" href="https://github.com/{{ site.github_username }}" target="_blank">
-            <img class="svg" src="{{ site.baseurl }}assets/img/Github-black.svg" alt="Twitter">
+            <img class="svg" src="{{ site.url }}/assets/img/Github-black.svg" alt="Twitter">
         </a>
     </li>
     {% endif %}
 </ul>
 <!-- jQuery Infinite Scrolling -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src='{{ site.baseurl }}assets/js/jquery.jscroll.min.js'></script>
+<script src='{{ site.url }}/assets/js/jquery.jscroll.min.js'></script>
 <script>
     // $('.blog-content').jscroll({ 
     //   contentSelector: "ul#posts li.post", 
@@ -41,11 +41,11 @@
     // });
 </script>
 <!-- JS -->
-<script src="{{ site.baseurl }}assets/js/jquery-ui-1.10.4.min.js"></script>
-<script src="{{ site.baseurl }}assets/js/toucheffects.js"></script>
+<script src="{{ site.url }}/assets/js/jquery-ui-1.10.4.min.js"></script>
+<script src="{{ site.url }}/assets/js/toucheffects.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="{{ site.baseurl }}assets/js/fokus.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl}}assets/js/github-repos.js"></script>
+<script src="{{ site.url }}/assets/js/fokus.min.js"></script>
+<script type="text/javascript" src="{{ site.url}}/assets/js/github-repos.js"></script>
 <script>
 $(document).ready(function() {
     $(".github-repos").githubRepos();
