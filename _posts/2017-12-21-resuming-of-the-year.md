@@ -6,7 +6,7 @@ comments: true
 ---
 
 
-Mais ou menos a um ano atrás eu me encontrava naquele momento em que todo universitário fica: será que estou no caminho certo? Será que consigo me virar com o que escolhi? Bom terminei o TCC e com ele vi que eu amava fazer o que havia escolhido. Documentação, o aplicativo desenvolvido e pronto. <!-- more --> Finalmente FORMADO!
+Mais ou menos a um ano atrás eu me encontrava naquele momento em que todo universitário fica: será que estou no caminho certo? Será que consigo me virar com o que escolhi? Bom terminei o TCC e com ele vi que eu amava fazer o que havia escolhido. Documentação, o aplicativo desenvolvido e pronto. <!--more-->Finalmente FORMADO!
 
 “Terminado” a parte acadêmica hora de colocar a mão na massa, procurar emprego, a parte mais complicada de todas..
 
