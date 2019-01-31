@@ -1,68 +1,31 @@
-{% include head.html %}
+---
+layout: compress
+---
 
-{% include header.html %}
+{% include base_path %}
 
-<section id="all-posts">
-    <div class="blog-content">
-        {{ content }}
-        {% if paginator.total_pages > 0 %}
-        <ul id="posts">
-            {% for post in paginator.posts %} 
-            {% unless post.draft %}
-            <li class="post">
-                {% if post.link %}
-                <h2 class="linktitle">
-                        <a href="{{ post.link }}">{{ post.title }}</a>&nbsp;
-                        <a href="{{ post.url }}" class="infin">&infin;</a>
-                    </h2>
-                {% elsif post.quote %}
-                <p class="date articledate center">{{ post.date | date:"%d %b %Y" }}</p>
-                {% else %}
-                <h2 class="title">
-                        <a href="{{ post.url }}" class="articletitle">{{ post.title }}</a>
-                    </h2>
-                <!-- <p class="date articledate center">{{ post.date | date:"%d/%m/%Y" }}</p> -->
-                <p class="date articledate center">{{ post.date | date:"%d %b %Y" }}</p>
-                {% endif %}
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
 
-                <article class="post-content">
-                    {% if post.excerpt %}
-                        {{ post.excerpt | markdownify }}
-                    {% unless post.nomore or post.quote %}
-                    <p><a href="{{ post.url }}">
-                        {% if post.language == "en" %}
-                        <strong>Continue reading&#8230;</strong>
-                        {% else %}
-                        <strong>Continue lendo&#8230;</strong>
-                        {% endif %}</a>
-                    </p>
-                    {% endunless %}
+  <body>
 
-                    {% else %}
-                        {{ post.content }}
-                    {% endif %}
-                </article>
-                <div class="line"></div>
-            </li>
-            {% endunless %}
-            {% endfor %}
-        </ul>
-            
-        <div class="post-content">
-            <div class="pagination-nav">
-              {% if paginator.next_page %}
-                <a class="pagination-item older" href="{{ paginator.next_page_path }}">Mais antigos</a>
-              {% else %}
-                <span class="pagination-item older">Mais antigos</span>
-              {% endif %}
-              {% if paginator.previous_page %}
-                <a class="pagination-item newer" href="{{ paginator.previous_page_path }}">Novidades</a>
-              {% else %}
-                <span class="pagination-item newer">Novidades</span>
-              {% endif %}
-            </div>
-        </div>
-        {% endif %}
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    {{ content }}
+
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
     </div>
-</section>
-{% include footer.html %}
+
+    {% include scripts.html %}
+
+  </body>
+</html>

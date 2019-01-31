@@ -1,82 +1,24 @@
-<ul class="social-links-footer">
-    {% if site.twitter_username %}
-    <li>
-        <a class="social" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
-            <img class="svg" src="/assets/img/Twitter-color.svg" alt="Twitter">
-        </a>
-    </li>
-    {% endif %} {% if site.facebook_username %}
-    <li>
-        <a class="social" href="https://facebook.com/{{ site.facebook_username }}" target="_blank">
-            <img class="svg" src="/assets/img/Facebook-color.svg" alt="Twitter">
-        </a>
-    </li>
-    {% endif %} {% if site.plus_username %}
-    <li>
-        <a class="social" href="https://plus.google.com/{{ site.plus_username }}" target="_blank">
-            <img class="svg" src="/assets/img/GooglePlus-color.svg" alt="Twitter">
-        </a>
-    </li>
-    {% endif %} {% if site.instagram_username %}
-    <li>
-        <a class="social" href="https://instagram.com/{{ site.instagram_username }}" target="_blank">
-            <img class="svg" src="/assets/img/Instagram-color.svg" alt="Twitter">
-        </a>
-    </li>
-    {% endif %} {% if site.github_username %}
-    <li>
-        <a class="social" href="https://github.com/{{ site.github_username }}" target="_blank">
-            <img class="svg" src="/assets/img/Github-black.svg" alt="Twitter">
-        </a>
-    </li>
+{% include base_path %}
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    {% if site.data.ui-text[site.locale].follow_label %}
+      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
     {% endif %}
-</ul>
-<!-- jQuery Infinite Scrolling -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src='/assets/js/jquery.jscroll.min.js'></script>
-<script>
-    // $('.blog-content').jscroll({ 
-    //   contentSelector: "ul#posts li.post", 
-    //   nextSelector: 'a.next' 
-    // });
-</script>
-<!-- JS -->
-<script src="/assets/js/jquery-ui-1.10.4.min.js"></script>
-<script src="/assets/js/toucheffects.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="/assets/js/fokus.min.js"></script>
-<script type="text/javascript" src="/assets/js/github-repos.js"></script>
-<script>
-$(document).ready(function() {
-    $(".github-repos").githubRepos();
-    $('a[target="_blank"]').addClass("external")
-    $('a').each(function(index) {
-        if ($(this).hasClass("social")) {
-            $(this).removeClass("external");
-        }
-    });
-});
-jQuery('img.svg').each(function() {
-    var $img = jQuery(this);
-    var imgID = $img.attr('id');
-    var imgClass = $img.attr('class');
-    var imgURL = $img.attr('src');
+    {% if site.twitter.username %}
+      <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    {% endif %}
+    {% if site.facebook.username %}
+      <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+    {% endif %}
+    {% if site.author.github %}
+      <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    {% endif %}
+    {% if site.author.bitbucket %}
+      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
+    {% endif %}
+    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+  </ul>
+</div>
 
-    jQuery.get(imgURL, function(data) {
-        var $svg = jQuery(data).find('svg');
-        if (typeof imgID !== 'undefined') {
-            $svg = $svg.attr('id', imgID);
-        }
-        if (typeof imgClass !== 'undefined') {
-            $svg = $svg.attr('class', imgClass + ' replaced-svg');
-        }
-        $svg = $svg.removeAttr('xmlns:a');
-        $img.replaceWith($svg);
-    }, 'xml');
-});
-
-hljs.initHighlightingOnLoad();
-</script>
-</body>
-
-</html>
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
